@@ -7,19 +7,19 @@
   <base href="https://htmlacademy-adaptive.github.io/2329089-cat-energy-29/2/">
 </head>
 <body class="page__body">
-<header class="main-header">
-  <div class="main-header__item">
-    <a class="main-header__logo">
+<header class="header">
+  <div class="header__item">
+    <a class="header__logo">
       <img src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
     </a>
   </div>
-  <div class="main-header__item">
-    <a class="main-header__logo-text">
+  <div class="header__item">
+    <a class="header__logo-text">
       <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
   </div>
-  <div class="main-header__item">
-    <button class="main-header__toggle" type="button" aria-label="Открыть меню">
+  <div class="header__item">
+    <button class="header__toggle" type="button" aria-label="Открыть меню">
       <img src="img/menu-mobile.svg" width="24" height="18" alt="">
     </button>
   </div>
@@ -39,7 +39,7 @@
     </div>
   </nav>
 </header>
-<main class="main-container">
+<main class="main">
   <section class="program-block">
     <div class="program-block__wrapper">
       <h1 class="program-block__title">Функциональное питание для котов</h1>
@@ -52,28 +52,28 @@
       </a>
     </div>
   </section>
-  <section class="catalog">
-    <div class="catalog__wrapper">
-      <h2 class="visually-hidden">Каталоги</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item catalog-card">
-          <h2 class="catalog-card__title">Похудение</h2>
-          <img class="catalog-card__image" src="img/cat-slim.svg" width="50" height="53" alt="">
-          <p class="catalog-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <hr class="catalog-card__line">
-          <a class="catalog-card__link catalog-link" href="catalog.html">
-            <span class="catalog-link__text">Каталог Slim</span>
-            <img class="catalog-link__image" src="img/icon-arrow.svg" width="24" height="12" alt="">
+  <section class="categories">
+    <div class="categories__wrapper">
+      <h2 class="visually-hidden">Категории каталога</h2>
+      <ul class="categories__list">
+        <li class="categories__item categories-card">
+          <h3 class="categories-card__title">Похудение</h3>
+          <img class="categories-card__image" src="img/cat-slim.svg" width="50" height="53" alt="">
+          <p class="categories-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <hr class="categories-card__line">
+          <a class="categories-card__link categories-link" href="catalog.html">
+            <span class="categories-link__text">Каталог Slim</span>
+            <img class="categories-link__image" src="img/icon-arrow.svg" width="24" height="12" alt="">
           </a>
         </li>
-        <li class="catalog__item catalog-card">
-          <h2 class="catalog-card__title">Набор массы</h2>
-          <img class="catalog-card__image" src="img/cat-pro.svg" width="67" height="50" alt="">
-          <p class="catalog-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <hr class="catalog-card__line">
-          <a class="catalog-card__link catalog-link" href="catalog.html">
-            <span class="catalog-card__text">Каталог Pro</span>
-            <img class="catalog-card__image" src="img/icon-arrow.svg" width="24" height="12" alt="">
+        <li class="categories__item categories-card">
+          <h3 class="categories-card__title">Набор массы</h3>
+          <img class="categories-card__image" src="img/cat-pro.svg" width="67" height="50" alt="">
+          <p class="categories-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <hr class="categories-card__line">
+          <a class="categories-card__link categories-link" href="catalog.html">
+            <span class="categories-card__text">Каталог Pro</span>
+            <img class="categories-card__image" src="img/icon-arrow.svg" width="24" height="12" alt="">
           </a>
         </li>
       </ul>
@@ -114,23 +114,27 @@
     <div class="live-example__wrapper">
       <h2 class="live-example__title">Живой пример</h2>
       <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих треннировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
-      <div class="live-example__result result-list">
-        <dl class="result-list__item">
-          <dt class="result-list__number">5 кг</dt>
-          <dd class="result-list__description">снижение веса</dd>
+      <div class="live-example__result-list">
+        <dl class="live-example__result-item">
+          <dt class="live-example__number">5 кг</dt>
+          <dd class="live-example__description">снижение веса</dd>
         </dl>
-        <dl class="result-list__item">
-          <dt class="result-list__number">60</dt>
-          <dd class="result-list__description">затрачено времени</dd>
+        <dl class="live-example__result-item">
+          <dt class="live-example__number">60</dt>
+          <dd class="live-example__description">затрачено времени</dd>
         </dl>
       </div>
-      <dl class="live-example__expenses expenses">
-        <dt class="expenses__text">Затраты на питание:</dt>
-        <dd class="expenses__text">15 000 руб.</dd>
+      <dl class="live-example__expenses">
+        <dt class="live-example__expenses-text">Затраты на питание:</dt>
+        <dd class="live-example__expenses-text">15 000 руб.</dd>
       </dl>
-      <div>
-        <img src="img/cat-before-mobile.png" width="280" height="256" alt="Кот толстый">
-        <img src="img/cat-after-mobile.png" width="280" height="256" alt="Кот худой">
+      <div class="live-example__slider">
+        <picture>
+          <img src="img/cat-before-mobile.png" width="280" height="256" alt="Кот толстый">
+        </picture>
+        <picture>
+          <img src="img/cat-after-mobile.png" width="280" height="256" alt="Кот худой">
+        </picture>
       </div>
     </div>
   </section>
@@ -139,20 +143,23 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="location__address">
         <h3 class="location__title">Приглашаем к сотрудничеству Дилеров!</h3>
-        <div class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        <div class="location__text">
+          <p>ул. Большая Конюшенная, д. 19/8</p>
+          <p>Санкт-Петербург</p>
+        </div>
       </div>
     </div>
     <picture>
-      <img class="location__map" src="img/location-mobile.png" width="320" height="362" alt="Адрес">
+      <img class="location__map" src="img/location-mobile.png" width="320" height="362" alt="Карта">
     </picture>
   </section>
 </main>
-<footer class="main-footer">
-  <div class="main-footer__wrapper">
-    <div class="main-footer__logo-text">
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__logo-text">
       <img src="img/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
     </div>
-    <div class="main-footer__social social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы Вконтакте">
@@ -171,7 +178,7 @@
         </li>
       </ul>
     </div>
-    <div class="main-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29">
         <span class="copyright__text">HTML Academy</span>
         <img class="copyright__image" src="img/html-academy.svg" width="27" height="34" alt="">
