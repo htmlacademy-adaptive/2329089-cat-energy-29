@@ -2,28 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 26px;
-  background: #68b738;
+  padding: 9px 20px;
+  background: $basic-green;
   text-decoration: none;
   outline: none;
   border: none;
-}
 
-.button:hover {
-  background: #5eaa2f;
-  cursor: pointer;
-}
+  &:hover {
+    background: $basic-green-2;
+    cursor: pointer;
+  }
 
-.button:active > .button__text {
-  opacity: 0.3;
-}
+  &:active > &__text {
+    opacity: 0.3;
+  }
 
-.button--secondary {
-  background: #f2f2f2;
-}
+  &--secondary {
+    background: $basic-grey;
+  }
 
-.button--secondary:hover {
-  background: #c2c2c2;
+  &--secondary:hover {
+    background: $basic-grey-2;
+  }
+
+  &--secondary:active > &__text--secondary {
+    opacity: 0.3;
+  }
 }
 
 .button__text {
@@ -32,10 +36,10 @@
   font-weight: 400;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
-}
 
-.button__text--secondary {
-  color: #3b3b3b;
+  &--secondary {
+    color: $special-dark-grey;
+  }
 }

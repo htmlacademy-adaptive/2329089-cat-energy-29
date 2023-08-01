@@ -3,8 +3,7 @@
   justify-content: center;
   align-items: center;
   grid-column: span 3;
-  background: #ffffff;
-  border: 1px solid #555555;
+  background: $white;
 }
 
 .navigation__wrapper {
@@ -23,25 +22,27 @@
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
-  color: #000000;
-}
+  color: $black;
 
-.navigation__link:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.navigation__link:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 
-.navigation__link--current {
-  border-bottom: 1px solid #68b738;
+  &--current {
+    border-bottom: 1px solid $basic-green;
+  }
 }
 
 .navigation__item {
   padding: 10px 20px;
+  border-top: 1px solid $line-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $line-grey;
+  }
 }
 
-.navigation__item:not(:last-child) {
-  border-bottom: 1px solid #555555;
-}
