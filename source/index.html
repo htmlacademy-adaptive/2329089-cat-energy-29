@@ -9,13 +9,13 @@
 <body class="page__body">
 <header class="header">
   <div class="header__item">
-    <a class="header__logo">
-      <img src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+    <a class="header__logo-link">
+      <img class="header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
     </a>
   </div>
   <div class="header__item">
-    <a class="header__logo-text">
-      <img src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+    <a class="header__logo-text-link">
+      <img class="header__logo-text-image" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
     </a>
   </div>
   <div class="header__item">
@@ -23,36 +23,40 @@
       <img src="img/menu-mobile.svg" width="24" height="18" alt="">
     </button>
   </div>
-  <nav class="main-nav">
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item ">
-          <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+  <nav class="navigation">
+    <div class="navigation__wrapper">
+      <ul class="navigation__list">
+        <li class="navigation__item ">
+          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
 <main class="main">
-  <section class="program-block">
+  <section class="main__program-block program-block">
     <div class="program-block__wrapper">
-      <h1 class="program-block__title">Функциональное питание для котов</h1>
-      <p class="program-block__slogan">Занялся собой? Займись котом!</p>
+      <div class="program-block__header">
+        <h1 class="program-block__title">Функциональное питание для котов</h1>
+        <p class="program-block__slogan">Занялся собой? Займись котом!</p>
+      </div>
       <picture>
         <img class="program-block__image" src="img/index-can-mobile.png" width="280" height="270" alt="Питание для котов">
       </picture>
       <a class="program-block__button button" href="form.html">
         <span class="button__text">Подобрать программу</span>
       </a>
+      <div>
+      </div>
     </div>
   </section>
-  <section class="categories">
+  <section class="main__categories categories">
     <div class="categories__wrapper">
       <h2 class="visually-hidden">Категории каталога</h2>
       <ul class="categories__list">
@@ -77,7 +81,7 @@
       </ul>
     </div>
   </section>
-  <section class="how-work">
+  <section class="main__how-work how-work">
     <div class="how-work__wrapper">
       <h2 class="how-work__title">Как это работает</h2>
       <ul class="how-work__list">
@@ -108,7 +112,7 @@
       </ul>
     </div>
   </section>
-  <section class="live-example">
+  <section class="main__live-example live-example">
     <div class="live-example__wrapper">
       <h2 class="live-example__title">Живой пример</h2>
       <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих треннировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
@@ -118,7 +122,7 @@
           <dd class="live-example__description">снижение веса</dd>
         </dl>
         <dl class="live-example__result-item">
-          <dt class="live-example__number">60</dt>
+          <dt class="live-example__number">60 дней</dt>
           <dd class="live-example__description">затрачено времени</dd>
         </dl>
       </div>
@@ -136,26 +140,28 @@
       </div>
     </div>
   </section>
-  <section class="location">
+  <section class="main__location location">
     <div class="location__wrapper">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="location__address">
         <h3 class="location__title">Приглашаем к сотрудничеству Дилеров!</h3>
-        <div class="location__text">
-          <p>ул. Большая Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
+        <div class="location__text-container">
+          <p class="location__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="location__text">Санкт-Петербург</p>
         </div>
       </div>
+      <picture>
+        <img class="location__map" src="img/location-mobile.png" width="320" height="362" alt="Карта">
+      </picture>
     </div>
-    <picture>
-      <img class="location__map" src="img/location-mobile.png" width="320" height="362" alt="Карта">
-    </picture>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__logo-text">
-      <img src="img/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+      <a class="footer__logo-text-link">
+        <img class="footer__logo-text-image" src="img/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+      </a>
     </div>
     <div class="footer__social social">
       <ul class="social__list">

@@ -1,0 +1,18 @@
+.gift-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 20px;
+  background: url("../img/gift-mobile.png") center no-repeat;
+}
+
+.gift-container__text {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}

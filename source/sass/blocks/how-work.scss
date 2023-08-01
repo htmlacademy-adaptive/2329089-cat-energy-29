@@ -1,3 +1,51 @@
 .how-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
 
+.how-work__title {
+  margin: 20px 0 20px 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+
+.how-work__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.how-work__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.how-work__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #68b738;
+}
+
+.how-work__description {
+  margin: 0;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
 }

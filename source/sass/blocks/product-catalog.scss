@@ -1,0 +1,22 @@
+.product-catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-catalog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}

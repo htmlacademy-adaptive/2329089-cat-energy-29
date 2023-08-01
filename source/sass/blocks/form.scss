@@ -1,0 +1,82 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.form__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.form__input-area {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: stretch;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__label {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form__input-text {
+
+}
+
+.form__textarea::placeholder,
+.form__input-text::placeholder {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form__checkbox-area,
+.form__radio-area {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: stretch;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__label:hover,
+.form__input-radio:hover {
+  cursor: pointer;
+}
+
+.form__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form__footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.form__button {
+  /*width: 100%;*/
+}
+
+.form__obligatory {
+  text-align: center;
+}

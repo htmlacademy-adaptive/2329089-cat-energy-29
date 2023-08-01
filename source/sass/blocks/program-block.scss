@@ -2,28 +2,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
   font-family: Oswald, Arial, sans-serif;
+  /*background-color: rgba(104, 183, 56, 0.85);*/
+  background-image: linear-gradient(to top, transparent 175px, rgba(104, 183, 56, 0.85) 175px), url("../img/cat-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom 175px;
+}
 
-  &__wrapper {
-    background: rgba(104, 183, 56, 0.85) url("../img/cat-background-mobile.jpg") center / 302px no-repeat;
+.program-block__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  }
+.program-block__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
 
-  &__title {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    color: #ffffff;
-  }
+.program-block__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
-  &__slogan {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
+.program-block__image-wrapper {
+  align-self: center;
+}
 
+.program-block__button {
+  align-self: stretch;
 }

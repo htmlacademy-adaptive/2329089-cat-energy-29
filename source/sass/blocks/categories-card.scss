@@ -1,0 +1,60 @@
+.categories-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.categories-card__title {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  margin: 10px 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.categories-card__image {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.categories-card__description {
+  grid-column: span 2;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #555555;
+}
+
+.categories-card__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+}
+
+.categories-card__link:active {
+  opacity: 0.3;
+}
+
+.categories-card__link-text {
+  padding: 0 10px 0 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}

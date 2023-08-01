@@ -1,0 +1,40 @@
+.additional-goods-item {
+  padding: 10px 0;
+  border-top: 1px solid #555555;
+}
+
+.additional-goods-item:last-child {
+  border-bottom: 1px solid #555555;
+}
+
+.additional-goods-item__title {
+  margin: 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-goods-item__parameters{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.additional-goods-item__key {
+
+}
+
+.additional-goods-item__value {
+  margin: 0;
+  justify-self: end;
+}
+
+.additional-goods-item__button {
+  width: 100%;
+}
