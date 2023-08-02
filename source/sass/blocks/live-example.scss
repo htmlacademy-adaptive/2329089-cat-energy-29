@@ -3,31 +3,29 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  background: #eaeaea;
+  background: $grey-background;
 }
 
 .live-example__title {
+  margin: 30px 0;
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: #000000;
+  color: $black;
 }
 
 .live-example__text {
   margin: 10px 0;
-  font-family: Lato, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
   text-align: left;
+  color: $special-dark-grey;
 }
 
 .live-example__result-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 20px;
 }
 
@@ -43,11 +41,13 @@
   width: 100%;
   padding: 15px 5px;
   font-family: Oswald, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
+  line-height: 24px;
+  color: $black;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #555555;
+  border: 1px solid $special-grey;
   border-radius: 5px;
 }
 
@@ -55,12 +55,14 @@
   position: relative;
   top: -10px;
   margin: 0;
-  padding: 0 5px;
+  width: 80%;
   font-family: Lato, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+  line-height: 12px;
+  color: $special-dark-grey;
   text-align: center;
-  background: #eaeaea;
+  background: $grey-background;
 }
 
 .live-example__expenses {
@@ -73,8 +75,9 @@
 .live-example__expenses-text {
   margin: 0;
   font-family: Oswald, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   text-transform: uppercase;
 }
 

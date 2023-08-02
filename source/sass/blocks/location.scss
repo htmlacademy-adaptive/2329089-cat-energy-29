@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background: $white;
 }
 
 .location--secondary {
-  background: #f2f2f2;
+  background: $basic-grey;
 }
 
 .location__wrapper {
@@ -28,8 +28,9 @@
 .location__title {
   margin: 0;
   font-family: Oswald, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -41,5 +42,7 @@
   font-family: Lato, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   margin: 5px 0;
+  color: $special-dark-grey;
 }

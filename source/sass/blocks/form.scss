@@ -9,6 +9,8 @@
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
+  line-height: 26px;
+  color: $black;
 }
 
 .form__input-area {
@@ -31,17 +33,42 @@
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 18px;
+  color: $special-dark-grey;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--radio {
+    color: $special-dark-grey-2;
+  }
+
+  &--checkbox {
+    color: $black;
+  }
 }
 
 .form__input-text {
-
-}
-
-.form__textarea::placeholder,
-.form__input-text::placeholder {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  border: 1px solid $grey-border-input;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $special-dark-grey;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .form__checkbox-area,
@@ -53,15 +80,27 @@
   gap: 10px;
 }
 
-.form__label:hover,
-.form__input-radio:hover {
-  cursor: pointer;
+
+.form__input-radio {
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .form__textarea {
   width: 100%;
   box-sizing: border-box;
   resize: none;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  &::placeholder {
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .form__footer {
@@ -73,10 +112,11 @@
   padding: 20px 0;
 }
 
-.form__button {
-  /*width: 100%;*/
-}
-
 .form__obligatory {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   text-align: center;
+  color: $black;
 }

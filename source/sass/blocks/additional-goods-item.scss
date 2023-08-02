@@ -1,10 +1,10 @@
 .additional-goods-item {
   padding: 10px 0;
-  border-top: 1px solid #555555;
-}
+  border-top: 1px solid $special-grey;
 
-.additional-goods-item:last-child {
-  border-bottom: 1px solid #555555;
+  &:last-child {
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .additional-goods-item__title {
@@ -24,6 +24,8 @@
   font-family: Lato, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 14px;
+  color: $special-dark-grey;
 }
 
 .additional-goods-item__key {

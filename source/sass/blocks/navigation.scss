@@ -33,16 +33,16 @@
   }
 
   &--current {
-    border-bottom: 1px solid $basic-green;
+    border-bottom: 2px solid $basic-green;
   }
 }
 
 .navigation__item {
   padding: 10px 20px;
-  border-top: 1px solid $line-grey;
+  border-top: 1px solid $line-navigation;
 
   &:last-child {
-    border-bottom: 1px solid $line-grey;
+    border-bottom: 1px solid $line-navigation;
   }
 }
 
