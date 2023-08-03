@@ -1,10 +1,15 @@
 @use "../variables" as *;
 
 .navigation {
+  grid-column: span 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: span 3;
+  width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    grid-column: span 1;
+  }
 }
 
 .navigation__wrapper {
@@ -12,16 +17,29 @@
 }
 
 .navigation__list {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    flex-flow: row nowrap;
+  }
 }
 
 .navigation__item {
   border-top: 1px solid $color-line-navigation;
 
+  @media (min-width: $tablet-min-width) {
+    border: 0;
+  }
+
   &:last-child {
     border-bottom: 1px solid $color-line-navigation;
+    @media (min-width: $tablet-min-width) {
+      border: 0;
+    }
   }
 }
 
@@ -34,6 +52,10 @@
   line-height: 20px;
   text-decoration: none;
   color: $primary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    text-transform: uppercase;
+  }
 
   &:hover {
     opacity: 0.6;

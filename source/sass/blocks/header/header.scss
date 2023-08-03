@@ -5,14 +5,33 @@
   grid-template-columns: auto 1fr auto;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    //display: flex;
+
+  }
 }
 
 .header__item {
   justify-self: center;
   padding: 10px 20px;
+
+  &--toggle {
+
+    @media (min-width: $tablet-min-width) {
+      display: none;
+    }
+  }
+
+  &--navigation {
+    @media (min-width: $tablet-min-width) {
+
+    }
+  }
 }
 
 .header__logo-link {
+
   &[href]:hover {
     opacity: 0.8;
   }
@@ -23,6 +42,7 @@
 }
 
 .header__logo-text-link {
+
   &[href]:hover {
     opacity: 0.8;
   }
@@ -41,3 +61,5 @@
     cursor: pointer;
   }
 }
+
+

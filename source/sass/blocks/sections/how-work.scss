@@ -15,14 +15,21 @@
 }
 
 .how-work__list {
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
   gap: 20px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .how-work__item {
@@ -31,6 +38,10 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .how-work__picture {
