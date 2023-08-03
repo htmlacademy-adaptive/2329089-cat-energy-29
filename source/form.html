@@ -26,14 +26,20 @@
   <nav class="navigation">
     <div class="navigation__wrapper">
       <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link " href="index.html">Главная</a>
+        <li class="navigation__item ">
+          <a class="navigation__link" href="index.html">
+            <span class="navigation__link-text">Главная</span>
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link" href="catalog.html">
+            <span class="navigation__link-text">Каталог продукции</span>
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
+          <a class="navigation__link" href="form.html">
+            <span class="navigation__link-text navigation__link-text--current">Подбор программы</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -46,7 +52,7 @@
       <h2 class="visually-hidden">Анкета</h2>
       <p class="program-selection__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
       <form class="program-selection__form form" action="" method="post">
-        <div class="form__input-area">
+        <fieldset class="form__input-area">
           <div class="form__row">
             <label class="form__label" for="name">Имя:*</label>
             <input class="form__input-text" name="name" id="name" placeholder="Барсик" required>
@@ -59,16 +65,16 @@
             <label class="form__label" for="age">Возраст (лет):</label>
             <input class="form__input-text" type="number" name="age" id="age" placeholder="7">
           </div>
-        </div>
-        <div class="form__radio-area">
+        </fieldset>
+        <fieldset class="form__radio-area">
           <input class="form__input-radio" type="radio" name="program-type" id="weight-loss" checked>
           <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
           <input class="form__input-radio" type="radio" name="program-type" id="weight-gain">
           <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
           <input class="form__input-radio" type="radio" name="program-type" id="unknown">
           <label class="form__label form__label--radio" for="unknown">Не знаю (нужен ваш совет)</label>
-        </div>
-        <div class="form__proprietor-area">
+        </fieldset>
+        <fieldset class="form__proprietor-area">
           <h2 class="form__title">Контактные данные (владельца кота)</h2>
           <div class="form__row">
             <label class="form__label" for="email">E-mail:*</label>
@@ -80,12 +86,12 @@
             <input class="form__input-text" type="tel" name="phone" id="phone" placeholder="8(960)900-60-90" required>
             <img src="img/phone-stroke.svg" width="20" height="20" alt="">
           </div>
-        </div>
-        <div class="form__comment-area">
+        </fieldset>
+        <fieldset class="form__comment-area">
           <h2 class="form__title">Комментарий</h2>
           <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
-        </div>
-        <div class="form__additional">
+        </fieldset>
+        <fieldset class="form__additional">
           <h2 class="form__title">Дополнительно</h2>
           <div class="form__checkbox-area">
             <input class="form__checkbox" type="checkbox" name="additionally" id="sweetener" checked>
@@ -97,11 +103,9 @@
             <input class="form__checkbox" type="checkbox" name="additionally" id="vitamins">
             <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
           </div>
-        </div>
+        </fieldset>
         <div class="form__footer">
-          <button class="form__button button">
-            <span class="button__text">Отправить заявку</span>
-          </button>
+          <button class="form__button button">Отправить заявку</button>
           <div class="form__obligatory">
             <span>* – Обязательные поля</span>
           </div>

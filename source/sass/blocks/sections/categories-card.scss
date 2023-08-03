@@ -1,9 +1,12 @@
+@use "../variables" as *;
+
 .categories-card {
   display: grid;
   grid-template-columns: auto 1fr;
   justify-content: center;
   align-items: center;
-  background: #f2f2f2;
+  gap: 0 10px;
+  background: $secondary-background-color;
   padding: 20px;
 }
 
@@ -11,7 +14,6 @@
   grid-column: 2 / 3;
   grid-row: 1;
   margin: 10px 0;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -19,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.categories-card__image {
+.categories-card__icon {
   grid-column: 1 / 2;
   grid-row: 1;
 }
@@ -29,11 +31,12 @@
   text-align: left;
   margin: 0;
   padding: 0 0 15px 0;
-  border-bottom: 1px solid $grey-line;
-  color: $special-dark-grey;
+  border-bottom: 1px solid $grey-light;
+  color: $secondary-text-color;
 }
 
 .categories-card__link {
+  grid-column: span 2;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,11 +50,10 @@
 
 .categories-card__link-text {
   padding: 0 10px 0 0;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $primary-text-color;
 }

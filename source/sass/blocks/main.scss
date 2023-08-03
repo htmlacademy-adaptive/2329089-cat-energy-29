@@ -1,15 +1,13 @@
-.main {
-
-}
+@use "variables" as *;
 
 .main__title {
   padding: 0 20px;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
 }
 
-.main__program-block {
+.main__intro {
+  position: relative;
   margin: 0 0 20px 0;
 }
 
@@ -19,22 +17,6 @@
 
 .main__how-work {
   margin: 0 0 20px 0;
-}
-
-.main__live-example {
-
-}
-
-.main__location {
-
-}
-
-.main__program-selection {
-
-}
-
-.main__product-catalog {
-
 }
 
 .main__additional-goods {

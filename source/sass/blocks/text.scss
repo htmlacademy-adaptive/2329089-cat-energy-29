@@ -1,5 +1,7 @@
+@use "variables" as *;
+
 .text {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

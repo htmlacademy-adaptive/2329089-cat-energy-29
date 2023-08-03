@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .gift-container {
   display: flex;
   flex-flow: column nowrap;
@@ -8,13 +10,14 @@
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/gift-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .gift-container__text {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
-  color: $white;
+  color: $secondary-color;
   margin: 0;
   text-align: center;
 }

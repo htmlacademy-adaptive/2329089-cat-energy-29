@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .how-work {
   display: flex;
   justify-content: center;
@@ -7,11 +9,9 @@
 
 .how-work__title {
   margin: 0 0 20px 0;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: #000000;
 }
 
 .how-work__list {
@@ -33,17 +33,17 @@
   gap: 20px;
 }
 
-.how-work__image-wrapper {
+.how-work__picture {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
-  background: #68b738;
+  background: $primary-color;
 }
 
 .how-work__description {
   margin: 0;
   text-align: left;
-  color: $special-dark-grey;
+  color: $secondary-text-color;
 }

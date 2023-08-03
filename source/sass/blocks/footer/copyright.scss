@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .copyright {
   padding: 20px 0;
 }
@@ -14,8 +16,7 @@
 }
 
 .copyright__text {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 20px;
-  font-weight: 400;
-  color: $black;
+  color: $primary-text-color;
 }

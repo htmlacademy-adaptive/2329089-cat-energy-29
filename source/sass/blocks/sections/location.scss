@@ -1,12 +1,13 @@
+@use "../variables" as *;
+
 .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
 }
 
 .location--secondary {
-  background: $basic-grey;
+  background: $secondary-background-color;
 }
 
 .location__wrapper {
@@ -27,22 +28,17 @@
 
 .location__title {
   margin: 0;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.location__text-wrapper {
-
-}
-
 .location__text {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   margin: 5px 0;
-  color: $special-dark-grey;
+  color: $secondary-text-color;
 }

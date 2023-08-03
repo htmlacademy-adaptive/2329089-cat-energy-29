@@ -1,4 +1,6 @@
-.program-selection{
+@use "../variables" as *;
+
+.program-selection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +13,6 @@
 
 .program-selection__description {
   margin: 0;
-  font-family: Oswald, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }

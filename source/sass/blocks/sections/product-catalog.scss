@@ -1,8 +1,9 @@
+@use "../variables" as *;
+
 .product-catalog {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
 }
 
 .product-catalog__wrapper {

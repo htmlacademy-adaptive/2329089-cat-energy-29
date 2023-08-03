@@ -1,16 +1,16 @@
+@use "../variables" as *;
+
 .additional-goods {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: $white;
 }
 
 .additional-goods__wrapper {
+  width: 100%;
   padding: 0 20px;
 }
 
 .additional-goods__title {
-  font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
@@ -22,8 +22,4 @@
   align-items: stretch;
   padding: 0;
   list-style: none;
-}
-
-.additional-goods__item {
-
 }

@@ -27,13 +27,19 @@
     <div class="navigation__wrapper">
       <ul class="navigation__list">
         <li class="navigation__item ">
-          <a class="navigation__link" href="index.html">Главная</a>
+          <a class="navigation__link" href="index.html">
+            <span class="navigation__link-text">Главная</span>
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link" href="catalog.html">
+            <span class="navigation__link-text navigation__link-text--current">Каталог продукции</span>
+          </a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
+          <a class="navigation__link" href="form.html">
+            <span class="navigation__link-text">Подбор программы</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -59,9 +65,7 @@
             <dd class="product-item__value">700 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -78,9 +82,7 @@
             <dd class="product-item__value">1000 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -97,9 +99,7 @@
             <dd class="product-item__value">700 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -116,9 +116,7 @@
             <dd class="product-item__value">1000 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -135,9 +133,7 @@
             <dd class="product-item__value">400 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -154,9 +150,7 @@
             <dd class="product-item__value">700 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item">
         <picture class="product-item__image-container">
@@ -173,9 +167,7 @@
             <dd class="product-item__value">500 ₽</dd>
           </dl>
         </div>
-        <button class="product-item__button button">
-          <span class="button__text">Заказать</span>
-        </button>
+        <button class="product-item__button button">Заказать</button>
       </li>
       <li class="product-catalog__item product-item product-item--show-all">
         <img src="img/plus.svg" height="30" width="30" alt="">
@@ -193,43 +185,27 @@
       <ul class="additional-goods__list">
         <li class="additional-goods__item additional-goods-item">
           <h3 class="additional-goods-item__title">Сахарозаменитель</h3>
-          <dl class="additional-goods-item__parameters">
-            <dt class="additional-goods-item__key">1 упаковка (100 г)</dt>
-            <dd class="additional-goods-item__value">200 ₽</dd>
-          </dl>
-          <button class="additional-goods-item__button button">
-            <span class="button__text">Заказать</span>
-          </button>
+          <span class="additional-goods-item__parameter">1 упаковка (100 г)</span>
+          <span class="additional-goods-item__value">200 ₽</span>
+          <button class="additional-goods-item__button button">Заказать</button>
         </li>
         <li class="additional-goods__item additional-goods-item">
           <h3 class="additional-goods-item__title">Питьевая вода</h3>
-          <dl class="additional-goods-item__parameters">
-            <dt class="additional-goods-item__key">5 литров</dt>
-            <dd class="additional-goods-item__value">50 ₽</dd>
-          </dl>
-          <button class="additional-goods-item__button button">
-            <span class="button__text">Заказать</span>
-          </button>
+          <span class="additional-goods-item__parameter">5 литров</span>
+          <span class="additional-goods-item__value">50 ₽</span>
+          <button class="additional-goods-item__button button">Заказать</button>
         </li>
         <li class="additional-goods__item additional-goods-item">
           <h3 class="additional-goods-item__title">Молоко</h3>
-          <dl class="additional-goods-item__parameters">
-            <dt class="additional-goods-item__key">1 литр</dt>
-            <dd class="additional-goods-item__value">100 ₽</dd>
-          </dl>
-          <button class="additional-goods-item__button button">
-            <span class="button__text">Заказать</span>
-          </button>
+          <span class="additional-goods-item__parameter">1 литр</span>
+          <span class="additional-goods-item__value">100 ₽</span>
+          <button class="additional-goods-item__button button">Заказать</button>
         </li>
         <li class="additional-goods__item additional-goods-item">
           <h3 class="additional-goods-item__title">Витамины</h3>
-          <dl class="additional-goods-item__parameters">
-            <dt class="additional-goods-item__key">1 упаковка (30 г)</dt>
-            <dd class="additional-goods-item__value">300 ₽</dd>
-          </dl>
-          <button class="additional-goods-item__button button">
-            <span class="button__text">Заказать</span>
-          </button>
+          <span class="additional-goods-item__parameter">1 упаковка (30 г)</span>
+          <span class="additional-goods-item__value">300 ₽</span>
+          <button class="additional-goods-item__button button">Заказать</button>
         </li>
       </ul>
       <div class="additional-goods__gift gift-container">

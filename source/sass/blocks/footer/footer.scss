@@ -1,15 +1,16 @@
+@use "../variables" as *;
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $basic-grey;
+  background: $secondary-background-color;
 }
 
 .footer__wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: stretch;
   width: 100%;
   padding: 0 20px;
 }
@@ -19,11 +20,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid $grey-line;
+  border-bottom: 1px solid $grey-light;
 }
 
 .footer__logo-text-link {
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -34,9 +34,5 @@
 }
 
 .footer__social {
-  border-bottom: 1px solid $grey-line;
-}
-
-.footer__copyright {
-
+  border-bottom: 1px solid $grey-light;
 }
