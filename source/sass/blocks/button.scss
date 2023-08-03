@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.button {
+  padding: 9px 20px;
+  font-family: $primary-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: $secondary-color;
+  text-transform: uppercase;
+  background: $primary-color;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background: $green-light;
+    cursor: pointer;
+  }
+
+  &:active > &__text {
+    color: rgba($secondary-color, 0.3);
+  }
+
+  &--secondary {
+    background: $secondary-background-color;
+    color: $secondary-text-color;
+  }
+
+  &--secondary:hover {
+    background: $grey-lighter;
+  }
+}

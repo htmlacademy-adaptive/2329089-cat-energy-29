@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+@use "blocks/variables" as *;
+@use "blocks/base";
+@use "blocks/fonts";
+@use "blocks/page";
+@use "blocks/button";
+@use "blocks/text";
+@use "blocks/header/header";
+@use "blocks/header/navigation";
+@use "blocks/main";
+@use "blocks/sections/intro";
+@use "blocks/sections/categories";
+@use "blocks/sections/categories-card";
+@use "blocks/sections/how-work";
+@use "blocks/sections/live-example";
+@use "blocks/sections/location";
+@use "blocks/footer/footer";
+@use "blocks/footer/social";
+@use "blocks/footer/copyright";
+@use "blocks/sections/product-catalog";
+@use "blocks/sections/product-item";
+@use "blocks/sections/additional-goods";
+@use "blocks/sections/additional-goods-item";
+@use "blocks/sections/gift-container";
+@use "blocks/sections/program-selection";
+@use "blocks/sections/form";

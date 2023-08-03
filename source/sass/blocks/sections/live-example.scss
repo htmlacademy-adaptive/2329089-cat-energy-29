@@ -1,0 +1,85 @@
+@use "../variables" as *;
+
+.live-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background: $special-background-color;
+}
+
+.live-example__title {
+  margin: 30px 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.live-example__text {
+  margin: 10px 0;
+  text-align: left;
+  color: $secondary-text-color;
+}
+
+.live-example__result-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.live-example__result-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-example__number {
+  width: 100%;
+  padding: 15px 5px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $color-line-block;
+  border-radius: 5px;
+}
+
+.live-example__description {
+  position: relative;
+  top: -10px;
+  margin: 0;
+  width: 80%;
+  font-family: $secondary-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: $secondary-text-color;
+  text-align: center;
+  background: $special-background-color;
+}
+
+.live-example__expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.live-example__expenses-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.live-example__slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}

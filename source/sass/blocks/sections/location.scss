@@ -1,0 +1,44 @@
+@use "../variables" as *;
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location--secondary {
+  background: $secondary-background-color;
+}
+
+.location__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.location__address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.location__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.location__text {
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 5px 0;
+  color: $secondary-text-color;
+}
