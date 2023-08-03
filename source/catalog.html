@@ -10,7 +10,11 @@
 <header class="header">
   <div class="header__item">
     <a class="header__logo-link" href="index.html">
-      <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      <picture>
+        <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+        <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
     </a>
   </div>
   <div class="header__item">

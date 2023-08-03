@@ -6,11 +6,16 @@
   align-items: center;
   padding: 0 20px;
   background: $special-background-color;
+
   @media (min-width: $tablet-min-width) {
     background-color: transparent;
-    background-image:  linear-gradient(to top, rgba($special-background-color, 0.85) 250px, transparent 250px);
+    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 250px, transparent 250px);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 400px, transparent 400px);
   }
 }
 
@@ -26,7 +31,16 @@
   margin: 30px 0;
   font-size: 36px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 1;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .live-example__text {
@@ -34,6 +48,11 @@
   margin: 10px 0;
   text-align: left;
   color: $secondary-text-color;
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .live-example__result-list {
@@ -43,8 +62,14 @@
   justify-content: center;
   align-items: start;
   gap: 20px;
+
   @media (min-width: $tablet-min-width) {
     grid-column: 1;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
@@ -60,11 +85,16 @@
   padding: 15px 5px;
   font-size: 24px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
   border: 1px solid $color-line-block;
   border-radius: 5px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .live-example__description {
@@ -75,12 +105,18 @@
   font-family: $secondary-font-family;
   font-size: 12px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 1;
   color: $secondary-text-color;
   text-align: center;
   background: $special-background-color;
+
   @media (min-width: $tablet-min-width) {
+    font-size: 14px;
     background: $secondary-color;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    background: $special-background-color;
   }
 }
 
@@ -92,11 +128,20 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+
   @media (min-width: $tablet-min-width) {
     justify-self: end;
     grid-column: 2;
     grid-template-columns: 1fr;
     justify-content: end;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 4;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 }
 
@@ -106,7 +151,9 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-min-width) {
+    font-size: 20px;
     justify-self: end;
   }
 }
@@ -117,6 +164,11 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 2;
+    grid-row: span 4;
+  }
 }
 
 .live-example__image {

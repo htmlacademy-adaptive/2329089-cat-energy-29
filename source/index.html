@@ -10,10 +10,14 @@
 <header class="header">
   <div class="header__item">
     <a class="header__logo-link">
-      <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      <picture>
+        <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+        <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
     </a>
   </div>
-  <div class="header__item">
+  <div class="header__item header__item--logo-text">
     <a class="header__logo-text-link">
       <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy">
     </a>
@@ -91,25 +95,25 @@
     <div class="how-work__wrapper">
       <h2 class="how-work__title">Как это работает</h2>
       <ul class="how-work__list">
-        <li class="how-work__item">
+        <li class="how-work__item how-work__item--first">
           <div class="how-work__picture">
             <img class="how-work__icon" src="img/icons/icon-leaf.svg" width="30" height="32" alt="">
           </div>
           <p class="how-work__description text">Функциональное питание содержит только полезные питательные вещества</p>
         </li>
-        <li class="how-work__item">
+        <li class="how-work__item how-work__item--second">
           <div class="how-work__picture">
             <img class="how-work__icon" src="img/icons/icon-dust.svg" width="26" height="29" alt="">
           </div>
           <p class="how-work__description text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="how-work__item">
+        <li class="how-work__item how-work__item--third">
           <div class="how-work__picture">
             <img class="how-work__icon" src="img/icons/icon-eat.svg" width="25" height="30" alt="">
           </div>
           <p class="how-work__description text">Замените один-два приёма обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="how-work__item">
+        <li class="how-work__item how-work__item--fourth">
           <div class="how-work__picture">
             <img class="how-work__icon" src="img/icons/icon-clock.svg" width="26" height="31" alt="">
           </div>

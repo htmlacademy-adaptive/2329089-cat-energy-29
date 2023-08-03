@@ -19,14 +19,18 @@
   line-height: 37px;
   text-align: left;
   text-transform: uppercase;
+
   @media (min-width: $tablet-min-width) {
     grid-column: 1;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .categories-card__icon {
   grid-column: 1;
   grid-row: 1;
+
   @media (min-width: $tablet-min-width) {
     grid-column: 2;
     grid-row: span 3;
@@ -35,7 +39,13 @@
   &--slim {
     width: 50px;
     height: 53px;
+
     @media (min-width: $tablet-min-width) {
+      width: 200px;
+      height: 211px;
+    }
+
+    @media (min-width: $desktop-min-width) {
       width: 100px;
       height: 106px;
     }
@@ -44,12 +54,17 @@
   &--pro {
     width: 67px;
     height: 50px;
+
     @media (min-width: $tablet-min-width) {
+      width: 268px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-min-width) {
       width: 134px;
       height: 100px;
     }
   }
-
 }
 
 .categories-card__description {
@@ -61,6 +76,7 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet-min-width) {
+    color: $primary-text-color;
     grid-column: 1;
     border: 0;
   }
@@ -91,5 +107,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $primary-text-color;
-}
 
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
