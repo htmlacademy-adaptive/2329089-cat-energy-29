@@ -1,4 +1,4 @@
-@use "../variables" as *;
+@use "../global/variables" as *;
 
 .categories-card {
   display: grid;
@@ -20,7 +20,7 @@
   text-align: left;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet) {
     grid-column: 1;
     font-size: 36px;
     line-height: 36px;
@@ -31,7 +31,7 @@
   grid-column: 1;
   grid-row: 1;
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet) {
     grid-column: 2;
     grid-row: span 3;
   }
@@ -40,12 +40,12 @@
     width: 50px;
     height: 53px;
 
-    @media (min-width: $tablet-min-width) {
+    @media (min-width: $tablet) {
       width: 200px;
       height: 211px;
     }
 
-    @media (min-width: $desktop-min-width) {
+    @media (min-width: $desktop) {
       width: 100px;
       height: 106px;
     }
@@ -55,12 +55,12 @@
     width: 67px;
     height: 50px;
 
-    @media (min-width: $tablet-min-width) {
+    @media (min-width: $tablet) {
       width: 268px;
       height: 200px;
     }
 
-    @media (min-width: $desktop-min-width) {
+    @media (min-width: $desktop) {
       width: 134px;
       height: 100px;
     }
@@ -73,10 +73,10 @@
   margin: 0;
   padding: 0 0 15px 0;
   border-bottom: 1px solid $grey-light;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
-  @media (min-width: $tablet-min-width) {
-    color: $primary-text-color;
+  @media (min-width: $tablet) {
+    color: $secondary-text-color;
     grid-column: 1;
     border: 0;
   }
@@ -90,7 +90,7 @@
   text-decoration: none;
   margin: 10px 0 0 0;
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet) {
     grid-column: 1;
   }
 }
@@ -106,9 +106,9 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: $primary-text-color;
+  color: $secondary-text-color;
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: normal;
   }

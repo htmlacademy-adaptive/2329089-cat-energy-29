@@ -1,4 +1,4 @@
-@use "../variables" as *;
+@use "../global/variables" as *;
 
 .additional-goods-item {
   display: grid;
@@ -22,19 +22,19 @@
 }
 
 .additional-goods-item__parameter {
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 }
 
 .additional-goods-item__value {
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
   margin: 0;
   justify-self: end;
 }

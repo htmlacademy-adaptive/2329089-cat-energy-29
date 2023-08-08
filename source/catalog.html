@@ -8,26 +8,28 @@
 </head>
 <body class="page__body">
 <header class="header">
-  <div class="header__item">
-    <a class="header__logo-link" href="index.html">
-      <picture>
-        <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
-        <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
-        <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-    </a>
+  <div class="header__logo-wrapper">
+    <div class="header__logo-item">
+      <a class="header__logo-main" href="index.html">
+        <picture>
+          <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo-main-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+    </div>
+    <div class="header__logo-item header__logo-item--secondary">
+      <a class="header__logo-text" href="index.html" tabindex="-1">
+        <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+      </a>
+    </div>
+    <div class="header__toggle-wrapper">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <img src="img/icons/menu-mobile.svg" width="24" height="18" alt="">
+      </button>
+    </div>
   </div>
-  <div class="header__item">
-    <a class="header__logo-text-link" href="index.html">
-      <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Cat Energy">
-    </a>
-  </div>
-  <div class="header__item header__item--toggle">
-    <button class="header__toggle" type="button" aria-label="Открыть меню">
-      <img src="img/icons/menu-mobile.svg" width="24" height="18" alt="">
-    </button>
-  </div>
-  <nav class="navigation">
+  <nav class="header__navigation navigation">
     <div class="navigation__wrapper">
       <ul class="navigation__list">
         <li class="navigation__item ">
@@ -228,7 +230,9 @@
           <p class="location__text">Санкт-Петербург</p>
         </div>
       </div>
-      <picture>
+      <picture class="location__map-wrapper">
+        <source srcset="img/content/location-desktop.png" media="(min-width: 1440px)">
+        <source srcset="img/content/location-tablet.png" media="(min-width: 768px)">
         <img class="location__map" src="img/content/location-mobile.png" width="320" height="362" alt="Карта">
       </picture>
     </div>
@@ -262,7 +266,7 @@
     </div>
     <div class="footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29">
-        <span class="copyright__text">HTML Academy</span>
+        <span class="copyright__text text">HTML Academy</span>
         <img class="copyright__image" src="img/icons/html-academy.svg" width="27" height="34" alt="">
       </a>
     </div>

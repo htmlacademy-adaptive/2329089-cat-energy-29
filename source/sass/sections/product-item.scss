@@ -1,4 +1,4 @@
-@use "../variables" as *;
+@use "../global/variables" as *;
 
 .product-item {
   display: grid;
@@ -43,11 +43,11 @@
 
 .product-item__text {
   margin: 0;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 }
 
 .product-item__parameters {
@@ -56,11 +56,11 @@
   justify-content: center;
   align-items: center;
   gap: 2px;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 }
 
 .product-item__value {

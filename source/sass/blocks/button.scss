@@ -1,8 +1,8 @@
-@use "variables" as *;
+@use "../global/variables" as *;
 
 .button {
   padding: 9px 20px;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -13,14 +13,14 @@
   outline: none;
   border: none;
 
-  @media (min-width: $tablet-min-width) {
-    padding: 14px 20px;
+  @media (min-width: $tablet) {
+    padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
   }
 
   &:hover {
-    background: $green-light;
+    background: $green-medium;
     cursor: pointer;
   }
 
@@ -28,12 +28,28 @@
     color: rgba($secondary-color, 0.3);
   }
 
-  &--secondary {
-    background: $secondary-background-color;
-    color: $secondary-text-color;
+  &:focus {
+    outline: 2px solid $primary-text-color;
   }
 
-  &--secondary:hover {
-    background: $grey-lighter;
+  &--secondary {
+    background: $secondary-background-color;
+    color: $primary-text-color;
+
+    &:hover {
+      background: $grey-lighter;
+      color: rgba($primary-text-color, 0.3);
+    }
+  }
+
+  &--card {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet) {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

@@ -1,0 +1,53 @@
+@use "../global/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: $secondary-background-color;
+
+  @media (min-width: $tablet) {
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 66px 110px;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__logo-text {
+  padding: 0 0 20px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    justify-self: start;
+  }
+}
+
+.footer__logo-text-link {
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__copyright {
+  @media (min-width: $tablet) {
+    justify-self: end;
+  }
+}

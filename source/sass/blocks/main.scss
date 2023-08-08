@@ -1,24 +1,100 @@
-@use "variables" as *;
+@use "../global/variables" as *;
 
 .main__title {
+  margin: 27px 0 41px;
   padding: 0 20px;
-  font-size: 36px;
-  font-weight: 400;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    margin: 65px 0 84px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 74px 0 84px;
+    padding: 0 110px;
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      margin: 65px 0 54px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 74px 0 55px;
+      padding: 0 110px;
+    }
+  }
 }
 
 .main__intro {
   position: relative;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 50px;
+  }
 }
 
 .main__categories {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 71px;
+  }
 }
 
 .main__how-work {
-  margin: 0 0 20px 0;
+  margin: 0 0 49px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 72px;
+  }
+}
+
+.main__product-catalog {
+  @media (min-width: $tablet) {
+    margin: 0 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 76px;
+  }
 }
 
 .main__additional-goods {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 75px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 87px;
+  }
+}
+
+.main__program-selection {
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 80px;
+  }
 }
