@@ -48,11 +48,11 @@
 }
 
 .form__title-proprietor {
-  margin: 0 0 35px;
+  margin-bottom: 35px;
   line-height: 26px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 76px;
+    margin-bottom: 76px;
     line-height: 36px;
   }
 
@@ -86,16 +86,16 @@
 }
 
 .form__title-comment {
-  margin: 0 0 38px;
+  margin-bottom: 38px;
   line-height: 26px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 87px;
+    margin-bottom: 87px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 78px;
+    margin-bottom: 78px;
     grid-column: span 2;
   }
 }
@@ -116,11 +116,11 @@
 }
 
 .form__title-extra {
-  margin: 0 0 34px;
+  margin-bottom: 34px;
   line-height: 26px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 57px;
+    margin-bottom: 57px;
     line-height: 36px;
   }
 

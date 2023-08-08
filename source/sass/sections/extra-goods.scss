@@ -1,0 +1,57 @@
+@use "../global/variables" as *;
+
+.extra-goods {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+
+.extra-goods__wrapper {
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 0 81px;
+  }
+}
+
+.extra-goods__title {
+  margin: 25px 0 36px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 80px;
+    line-height: 36px;
+    grid-column: span 2;
+  }
+}
+
+.extra-goods__list {
+  display: grid;
+  align-items: stretch;
+  margin: 0 0 35px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.extra-goods__gift {
+  @media (min-width: $desktop) {
+    align-self: stretch;
+  }
+}

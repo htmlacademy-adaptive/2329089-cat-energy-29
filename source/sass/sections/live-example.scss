@@ -4,10 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 25px 20px 40px;
   background: $special-background-color;
 
   @media (min-width: $tablet) {
+    padding: 45px 31px 101px;
     background-color: transparent;
     background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 250px, transparent 250px);
     background-repeat: no-repeat;
@@ -15,81 +16,88 @@
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 400px, transparent 400px);
+    padding: 0 110px 75px;
+    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 462px, transparent 462px);
   }
 }
 
 .live-example__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .live-example__title {
-  grid-column: span 2;
-  margin: 30px 0;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1;
+  margin: 0 0 40px;
+  line-height: 40px;
 
   @media (min-width: 768px) {
-    font-size: 60px;
+    grid-column: span 2;
+    margin: 0 0 60px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1;
     grid-row: 1;
+    margin: 0 0 146px;
   }
 }
 
 .live-example__text {
-  grid-column: span 2;
-  margin: 10px 0;
-  text-align: left;
+  margin: 0 0 20px;
+  line-height: 18px;
   color: $primary-text-color;
 
+  @media (min-width: $tablet) {
+    margin: 0 0 55px;
+    grid-column: span 2;
+  }
+
   @media (min-width: $desktop) {
+    margin: 0 0 69px;
     grid-column: 1;
     grid-row: 2;
   }
 }
 
 .live-example__result-list {
-  grid-column: span 2;
+  margin: 0 0 34px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  align-items: start;
-  gap: 20px;
+  align-items: center;
+  gap: 32px;
 
   @media (min-width: $tablet) {
-    grid-column: 1;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 0 0 60px;
     grid-column: 1;
     grid-row: 3;
   }
 }
 
 .live-example__result-item {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .live-example__number {
-  width: 100%;
-  padding: 15px 5px;
+  font-family: $secondary-font-family;
   font-size: 24px;
   font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
+  line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0 17px;
   border: 1px solid $color-line-block;
-  border-radius: 5px;
+  border-radius: 3px;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -98,16 +106,18 @@
 }
 
 .live-example__description {
-  position: relative;
-  top: -10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
   margin: 0;
-  width: 80%;
+  padding: 0 15px;
   font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1;
-  color: $primary-text-color;
+  line-height: 12px;
   text-align: center;
+  color: $primary-text-color;
   background: $special-background-color;
 
   @media (min-width: $tablet) {
@@ -121,17 +131,16 @@
 }
 
 .live-example__expenses {
+  margin: 0 0 20px;
   justify-self: center;
-  grid-column: span 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 
   @media (min-width: $tablet) {
+    margin: 0;
     justify-self: end;
-    grid-column: 2;
     grid-template-columns: 1fr;
     justify-content: end;
   }
@@ -140,16 +149,20 @@
     justify-self: center;
     grid-column: 1;
     grid-row: 4;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 63px;
   }
 }
 
 .live-example__expenses-text {
   margin: 0;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
@@ -159,13 +172,18 @@
 }
 
 .live-example__slider {
-  grid-column: span 2;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $tablet) {
+    margin: 104px 0 0;
+    grid-column: span 2;
+  }
+
   @media (min-width: $desktop) {
+    margin: 0;
     grid-column: 2;
     grid-row: span 4;
   }

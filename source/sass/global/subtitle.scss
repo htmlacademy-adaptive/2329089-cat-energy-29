@@ -48,7 +48,7 @@
     }
 
     @media (min-width: $desktop) {
-      margin-right: 37px;
+      //margin-right: 37px;
     }
   }
 
@@ -60,11 +60,11 @@
     &::before,
     &::after {
       @media (min-width: $tablet) {
-        width: calc(100vw - 70px);
+        width: calc(100vw - 50px);
       }
 
       @media (min-width: $desktop) {
-        width: calc(100vw - 110px);
+        width: calc(100vw - 90px);
       }
     }
   }
