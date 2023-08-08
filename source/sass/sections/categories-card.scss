@@ -41,7 +41,7 @@
 
   @media (min-width: $desktop) {
     grid-column: 2;
-    margin: 0 0 73px;
+    margin: 0 0 39px;
   }
 }
 
@@ -59,8 +59,10 @@
   }
 
   @media (min-width: $desktop) {
+    margin: 0 0 39px;
     grid-column: 1;
     grid-row: 1;
+    width: auto;
   }
 }
 
