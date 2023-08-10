@@ -14,7 +14,6 @@
   padding: 12px 0 12px 46px;
   font-family: $secondary-font-family;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: $secondary-text-color;
   user-select: none;
@@ -39,7 +38,7 @@
     width: 30px;
     height: 30px;
     padding: 6px 3px 6px 4px;
-    border: 1px solid $color-line-block;
+    border: 1px solid $primary-border-color;
 
     @media (min-width: $tablet) {
       top: 16px;

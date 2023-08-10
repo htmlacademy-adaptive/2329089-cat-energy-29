@@ -1,0 +1,51 @@
+@use "../global/variables" as *;
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+.slider__item {
+  position: relative;
+  height: 256px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 512px;
+  }
+}
+
+.slider__image {
+  position: absolute;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+
+  &--before {
+    left: 0;
+  }
+
+  &--after {
+    right: 0;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  left: calc(50% - 2px);
+  z-index: 10;
+  width: 4px;
+  height: 256px;
+  background: #666666;
+  border-radius: 2px;
+
+  @media (min-width: $tablet) {
+    height: 512px;
+  }
+}

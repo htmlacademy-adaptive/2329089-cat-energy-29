@@ -30,7 +30,7 @@
 
 .main__intro {
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 -20px 20px;
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -62,6 +62,22 @@
 
   @media (min-width: $desktop) {
     margin: 0 0 72px;
+  }
+}
+
+.main__live-example {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 -30px;
+  }
+}
+
+.main__location {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 -30px;
   }
 }
 

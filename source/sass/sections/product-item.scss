@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: end;
     padding: 0 37px 40px;
-    background-image: linear-gradient(to top, $secondary-background-color 430px, transparent 430px);
+    background-image: linear-gradient(to top, $secondary-bg-color 430px, transparent 430px);
     border: 0;
   }
 
@@ -30,8 +30,8 @@
     @media (min-width: $tablet) {
       height: 430px;
       align-self: end;
-      background: $primary-background-color;
-      border: 1px solid $secondary-background-color;
+      background: $primary-bg-color;
+      border: 1px solid $secondary-bg-color;
     }
 
     @media (min-width: $desktop) {
@@ -80,9 +80,7 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px 0;
-  font-family: $primary-font-family;
   font-size: 12px;
-  font-weight: 400;
   line-height: 16px;
   color: $primary-text-color;
 
@@ -98,7 +96,7 @@
 
   @media (min-width: $tablet) {
     padding: 5px 0;
-    border-bottom: 1px solid $color-line-block;
+    border-bottom: 1px solid $primary-border-color;
   }
 }
 
@@ -112,9 +110,7 @@
 }
 
 .product-item__text {
-  font-family: $primary-font-family;
   font-size: 12px;
-  font-weight: 400;
   line-height: 16px;
   text-align: center;
   color: $primary-text-color;

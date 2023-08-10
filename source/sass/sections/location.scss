@@ -7,7 +7,7 @@
 }
 
 .location--secondary {
-  background: $secondary-background-color;
+  background: $secondary-bg-color;
 }
 
 .location__wrapper {
@@ -40,7 +40,7 @@
     left: 110px;
     width: 565px;
     padding: 60px 80px;
-    background: $primary-background-color;
+    background: $primary-bg-color;
   }
 }
 
@@ -61,10 +61,10 @@
 }
 
 .location__text-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: end;
+  display: grid;
+  justify-content: end;
+  align-content: start;
+  gap: 20px;
   text-align: right;
   line-height: 20px;
   color: $primary-text-color;

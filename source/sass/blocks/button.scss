@@ -20,24 +20,28 @@
   }
 
   &:hover {
-    background: $green-medium;
+    background: $hover-button-color;
     cursor: pointer;
   }
 
-  &:active > &__text {
+  &:active {
     color: rgba($secondary-color, 0.3);
   }
 
   &:focus {
-    outline: 2px solid $primary-text-color;
+    outline: 2px solid $focus-button-focus;
   }
 
   &--secondary {
-    background: $secondary-background-color;
+    background: $secondary-bg-color;
     color: $primary-text-color;
 
     &:hover {
       background: $grey-lighter;
+      color: rgba($primary-text-color, 0.3);
+    }
+
+    &:active {
       color: rgba($primary-text-color, 0.3);
     }
   }

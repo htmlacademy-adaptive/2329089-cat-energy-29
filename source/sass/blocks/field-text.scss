@@ -46,9 +46,9 @@
   padding: 14px 15px 13px;
   font-family: $secondary-font-family;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: $primary-text-color;
+  text-transform: uppercase;
   border: 1px solid $primary-border-input;
 
   @media (min-width: $tablet) {
@@ -58,7 +58,7 @@
   }
 
   &:hover {
-    border-color: $color-line-block;
+    border-color: $primary-border-color;
   }
 
   &:focus {
@@ -73,7 +73,6 @@
   &::placeholder {
     font-family: $secondary-font-family;
     font-size: 16px;
-    font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
     color: $primary-text-color;
@@ -87,7 +86,7 @@
 
   &--email,
   &--phone {
-    border: 1px solid $color-line-block;
+    border: 1px solid $primary-border-color;
   }
 
   &--comment {
@@ -99,7 +98,6 @@
   align-self: center;
   font-family: $secondary-font-family;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: $primary-text-color;
   text-transform: uppercase;

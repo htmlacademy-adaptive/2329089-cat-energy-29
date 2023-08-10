@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  padding: 13px 0 0;
 
   @media (min-width: $tablet) {
     grid-template-columns: auto 1fr;
@@ -16,12 +15,12 @@
   }
 }
 
-.header__logo-wrapper {
+.header__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 0 20px 10px;
+  padding: 13px 0 10px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -32,7 +31,7 @@
   }
 }
 
-.header__logo-main {
+.header__logo {
   &[href]:hover {
     opacity: 0.8;
   }
@@ -42,7 +41,7 @@
   }
 }
 
-.header__logo-main-image {
+.header__logo-image {
   @media (min-width: $tablet) {
     width: 60px;
     height: 50px;
@@ -77,30 +76,17 @@
   }
 }
 
-.header__toggle-wrapper {
-  justify-self: end;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.header__toggle {
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.header__navigation {
+.header__nav {
   grid-column: span 3;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 -20px;
 
   @media (min-width: $tablet) {
     justify-self: end;
     grid-column: 2;
     grid-row: 1;
+    margin: 0;
   }
 }

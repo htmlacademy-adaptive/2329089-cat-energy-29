@@ -4,15 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
 
   @media (min-width: $tablet) {
     padding: 0 109px 47px 30px;
-    border-bottom: 1px solid $color-line-navigation;
+    border-bottom: 1px solid $secondary-border-color;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px;
     border: 0;
   }
 }
@@ -40,6 +38,7 @@
   list-style: none;
 
   @media (min-width: $tablet) {
+    counter-reset: new 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -61,46 +60,28 @@
   gap: 20px;
 
   @media (min-width: $tablet) {
+    position: relative;
+    counter-increment: new 1;
     grid-template-columns: 1fr;
     padding: 0 0 50px;
     gap: 31px;
   }
 
-  &--first {
+  &::after {
+
     @media (min-width: $tablet) {
-      background-image: url("../img/icons/number_1.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: contain;
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      content: counter(new);
+      font-family: $secondary-font-family;
+      font-size: 200px;
+      line-height: 1;
+      color: $secondary-bg-color;
+      text-transform: uppercase;
     }
   }
 
-  &--second {
-    @media (min-width: $tablet) {
-      background-image: url("../img/icons/number_2.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: contain;
-    }
-  }
-
-  &--third {
-    @media (min-width: $tablet) {
-      background-image: url("../img/icons/number_3.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: contain;
-    }
-  }
-
-  &--fourth {
-    @media (min-width: $tablet) {
-      background-image: url("../img/icons/number_4.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: contain;
-    }
-  }
 }
 
 .how-work__picture {

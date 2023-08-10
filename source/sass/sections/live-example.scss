@@ -5,19 +5,19 @@
   justify-content: center;
   align-items: center;
   padding: 25px 20px 40px;
-  background: $special-background-color;
+  background: $special-bg-color;
 
   @media (min-width: $tablet) {
     padding: 45px 31px 101px;
     background-color: transparent;
-    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 250px, transparent 250px);
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 250px, transparent 250px);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   @media (min-width: $desktop) {
     padding: 0 110px 75px;
-    background-image: linear-gradient(to top, rgba($special-background-color, 0.85) 462px, transparent 462px);
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
   }
 }
 
@@ -91,12 +91,11 @@
 .live-example__number {
   font-family: $secondary-font-family;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   padding: 14px 0 17px;
-  border: 1px solid $color-line-block;
+  border: 1px solid $primary-border-color;
   border-radius: 3px;
 
   @media (min-width: $tablet) {
@@ -112,13 +111,11 @@
   display: inline-block;
   margin: 0;
   padding: 0 15px;
-  font-family: $primary-font-family;
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
   text-align: center;
   color: $primary-text-color;
-  background: $special-background-color;
+  background: $special-bg-color;
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -126,7 +123,7 @@
   }
 
   @media (min-width: $desktop) {
-    background: $special-background-color;
+    background: $special-bg-color;
   }
 }
 
@@ -160,7 +157,6 @@
   margin: 0;
   font-family: $secondary-font-family;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
