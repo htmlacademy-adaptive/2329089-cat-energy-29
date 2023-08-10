@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 20px 40px;
-  background: $special-bg-color;
+  padding: 25px 0 40px;
+  background-color: $special-bg-color;
+  background-size: 100vw;
 
   @media (min-width: $tablet) {
     padding: 45px 31px 101px;
@@ -21,7 +22,7 @@
   }
 }
 
-.live-example__wrapper {
+.live-example__container {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -67,12 +68,13 @@
 .live-example__result-list {
   margin: 0 0 34px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 124px);
   justify-content: center;
   align-items: center;
   gap: 32px;
 
   @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 162px);
     margin: 0;
   }
 

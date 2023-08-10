@@ -30,7 +30,6 @@
 
 .how-work__list {
   display: grid;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   margin: 0;
@@ -75,13 +74,12 @@
       right: 0;
       content: counter(new);
       font-family: $secondary-font-family;
-      font-size: 200px;
+      font-size: 280px;
       line-height: 1;
       color: $secondary-bg-color;
       text-transform: uppercase;
     }
   }
-
 }
 
 .how-work__picture {

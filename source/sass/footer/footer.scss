@@ -16,7 +16,7 @@
   }
 }
 
-.footer__wrapper {
+.footer__container {
   display: grid;
   align-items: center;
   width: 100%;
@@ -27,16 +27,18 @@
 }
 
 .footer__logo-text {
-  padding: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   text-align: center;
 
   @media (min-width: $tablet) {
+    margin: 0;
     padding: 0;
-    justify-self: start;
+    justify-content: start;
   }
-}
 
-.footer__logo-text-link {
   &[href]:hover {
     opacity: 0.8;
   }
@@ -51,3 +53,4 @@
     justify-self: end;
   }
 }
+
