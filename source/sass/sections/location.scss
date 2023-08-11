@@ -102,6 +102,24 @@
   }
 }
 
+.location__map-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.location__map-picture {
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
+}
+
 .location__map {
   width: 100%;
   height: 100%;
