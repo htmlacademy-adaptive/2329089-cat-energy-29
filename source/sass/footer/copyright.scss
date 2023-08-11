@@ -1,0 +1,30 @@
+@use "../global/variables" as *;
+
+.copyright {
+  padding: 20px 0 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    gap: 23px;
+    justify-content: end;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  line-height: 20px;
+  color: $primary-text-color;
+}

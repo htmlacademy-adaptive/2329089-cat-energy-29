@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+source,
+img {
+  display: block;
+}
+
+picture {
+  display: block;
+  height: 100%;
+}

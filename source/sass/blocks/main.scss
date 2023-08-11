@@ -1,24 +1,100 @@
-@use "variables" as *;
+@use "../global/variables" as *;
 
 .main__title {
+  margin: 27px 0 41px;
   padding: 0 20px;
-  font-size: 36px;
-  font-weight: 400;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    margin: 65px 0 84px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 74px 0 84px;
+    padding: 0 110px;
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      margin: 65px 0 54px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 74px 0 55px;
+      padding: 0 110px;
+    }
+  }
 }
 
 .main__intro {
   position: relative;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .main__categories {
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 71px;
+  }
 }
 
 .main__how-work {
-  margin: 0 0 20px 0;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
+  }
 }
 
-.main__additional-goods {
-  margin: 0 0 20px 0;
+.main__product-catalog {
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 76px;
+  }
+}
+
+.main__extra-goods {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 87px;
+  }
+}
+
+.main__program-selection {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
 }

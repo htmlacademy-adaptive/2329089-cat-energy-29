@@ -1,0 +1,102 @@
+@use "../global/variables" as *;
+
+.how-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 47px;
+    border-bottom: 1px solid $secondary-border-color;
+  }
+
+  @media (min-width: $desktop) {
+    border: 0;
+  }
+}
+
+.how-work__title {
+  margin: 0 0 40px;
+  line-height: 1;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 72px;
+  }
+}
+
+.how-work__list {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    counter-reset: new 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 80px 179px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 95px;
+  }
+}
+
+.how-work__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    counter-increment: new 1;
+    grid-template-columns: 1fr;
+    padding: 0 0 50px;
+    gap: 31px;
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      content: counter(new);
+      font-family: $secondary-font-family;
+      font-size: 280px;
+      line-height: 1;
+      color: $secondary-bg-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.how-work__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: $primary-color;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.how-work__description {
+  margin: 0;
+  line-height: 18px;
+  color: $primary-text-color;
+}

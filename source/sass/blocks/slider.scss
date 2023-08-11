@@ -1,0 +1,131 @@
+@use "../global/variables" as *;
+
+.slider {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+.slider__item {
+  position: relative;
+  height: 256px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 512px;
+  }
+}
+
+.slider__image {
+  position: absolute;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+
+  &--before {
+    left: 0;
+  }
+
+  &--after {
+    right: 0;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  left: calc(50% - 20px);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 256px;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: $hover-button-color;
+  }
+
+  @media (min-width: $tablet) {
+    height: 512px;
+  }
+}
+
+.slider__control-line {
+  width: 0;
+  height: 100%;
+  border: 2px solid $grey-dim;
+  border-radius: 2px;
+}
+
+.slider__control-circle {
+  position: absolute;
+  top: calc(50% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $grey-dim;
+  border-radius: 50%;
+  background: $secondary-color;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: $hover-button-color;
+  }
+}
+
+
+.slider__arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid $grey-dim;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid $grey-dim;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__control-circle:hover + .slider__control-line {
+  border-color: $primary-color;
+}
+
+.slider__control-circle:active + .slider__control-line {
+  border-color: $hover-button-color;
+}
+
+.slider__control-circle:hover > .slider__arrow-left {
+  border-right-color: $primary-color;
+}
+
+.slider__control-circle:hover > .slider__arrow-right {
+  border-left-color: $primary-color;
+}
+
+.slider__control-circle:active > .slider__arrow-left {
+  border-right-color: $hover-button-color;
+}
+
+.slider__control-circle:active > .slider__arrow-right {
+  border-left-color: $hover-button-color;
+}

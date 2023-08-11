@@ -1,0 +1,35 @@
+@use "../global/variables" as *;
+
+.program-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-selection__title {
+  grid-column: span 2;
+
+  @media (min-width: $tablet) {
+    margin: 65px 0 54px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 74px 0 55px;
+  }
+}
+
+.program-selection__description {
+  grid-column: span 2;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 66px;
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
