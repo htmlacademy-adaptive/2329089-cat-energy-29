@@ -22,6 +22,8 @@
 }
 
 .social__link {
+  display: block;
+
   &:active {
     opacity: 0.3;
   }

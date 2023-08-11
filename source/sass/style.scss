@@ -8,7 +8,6 @@
 @use "blocks/button";
 @use "global/title";
 @use "global/subtitle";
-@use "global/text";
 @use "header/header";
 @use "header/nav";
 @use "blocks/main";
@@ -26,13 +25,14 @@
 @use "sections/product-item";
 @use "sections/extra-goods";
 @use "sections/extra-item";
-@use "sections/gift-container";
+@use "sections/gift";
 @use "sections/program-selection";
 @use "sections/form";
 @use "blocks/field-text";
 @use "blocks/field-radio";
 @use "blocks/field-checkbox";
 
-* {
-  outline: 1px solid red;
-}
+
+//* {
+//  outline: 1px solid red;
+//}

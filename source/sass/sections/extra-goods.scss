@@ -1,15 +1,7 @@
 @use "../global/variables" as *;
 
 .extra-goods {
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0 110px;
-  }
+  position: relative;
 }
 
 .extra-goods__wrapper {
@@ -24,11 +16,13 @@
 }
 
 .extra-goods__title {
-  margin: 25px 0 36px;
+  margin-top: 25px;
+  margin-bottom: 36px;
   line-height: 24px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
     line-height: 36px;
     grid-column: span 2;
   }
@@ -48,6 +42,10 @@
   @media (min-width: $desktop) {
     margin: 0;
   }
+}
+
+.extra-goods__item:not(:last-child) {
+  margin-bottom: -1px;
 }
 
 .extra-goods__gift {

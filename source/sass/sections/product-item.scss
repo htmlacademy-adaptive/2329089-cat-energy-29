@@ -22,7 +22,7 @@
     border-bottom: 1px solid $grey-lighter;
   }
 
-  &--show-all {
+  &--more {
     display: flex;
     gap: 10px;
     flex-flow: column nowrap;
@@ -60,6 +60,7 @@
 .product-item__title {
   align-self: center;
   margin: 10px 0;
+  padding-right: 25px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -69,10 +70,24 @@
 
   @media (min-width: $tablet) {
     margin: 40px 0 20px;
-    max-width: 135px;
+    padding: 0 50px;
+    //max-width: 135px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+  }
+
+  &--more {
+    padding-right: 0;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
   }
 }
 

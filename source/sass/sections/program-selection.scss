@@ -4,22 +4,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+}
+
+.program-selection__title {
+  grid-column: span 2;
 
   @media (min-width: $tablet) {
-    padding: 0 70px;
+    margin: 65px 0 54px;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px;
+    margin: 74px 0 55px;
   }
 }
 
-.program-selection__wrapper {
-  width: 100%;
-}
-
 .program-selection__description {
+  grid-column: span 2;
   font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 18px;

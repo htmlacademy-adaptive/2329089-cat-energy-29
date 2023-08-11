@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    padding: 0 109px 47px 30px;
+    padding: 0 0 47px;
     border-bottom: 1px solid $secondary-border-color;
   }
 
@@ -67,7 +67,6 @@
   }
 
   &::after {
-
     @media (min-width: $tablet) {
       position: absolute;
       z-index: -1;

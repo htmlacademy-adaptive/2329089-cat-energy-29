@@ -1,5 +1,6 @@
 @use "../global/variables" as *;
-.nav{
+
+.nav {
   position: relative;
 }
 
@@ -67,6 +68,7 @@
 
   &--inverted {
     border-color: $secondary-color;
+
     @media (min-width: $desktop) {
       color: $secondary-color;
     }
@@ -115,17 +117,13 @@
   }
 }
 
-
-
 @media (max-width: 767px) {
-
   .nav--nojs .nav__toggle-wrapper {
     display: none;
   }
 
   .nav--opened .nav__toggle {
     background-image: url("../img/icons/icon-close.svg");
-
   }
 
   .nav--opened .nav__wrapper {

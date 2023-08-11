@@ -2,6 +2,7 @@
 
 .location {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11,14 +12,18 @@
 }
 
 .location__wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  //display: flex;
+  //flex-flow: column nowrap;
+  //justify-content: center;
+  //align-items: center;
+  //width: 100%;
 
   @media (min-width: $desktop) {
-    position: relative;
+    position: absolute;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 }
 
@@ -27,19 +32,19 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: stretch;
-  padding: 26px 20px;
+  padding: 26px 0;
   width: 100%;
 
   @media (min-width: $tablet) {
-    padding: 60px 70px;
+    padding: 60px 0;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    width: 565px;
-    padding: 60px 80px;
+    position: relative;
+    //top: 95px;
+    width: auto;
+    gap: 50px;
+    padding: 60px 60px;
     background: $primary-bg-color;
   }
 }

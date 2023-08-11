@@ -37,6 +37,8 @@
 }
 
 .header__logo {
+  display: block;
+
   &[href]:hover {
     opacity: 0.8;
   }

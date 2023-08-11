@@ -8,49 +8,51 @@
 </head>
 <body class="page__body">
 <header class="header">
-  <div class="header__wrapper">
-    <div class="header__logo-item">
-      <a class="header__logo" href="index.html">
-        <picture>
-          <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
-          <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-        </picture>
-      </a>
+  <div class="header__container container">
+    <div class="header__list">
+      <div class="header__logo-item">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          </picture>
+        </a>
+      </div>
+      <div class="header__logo-item header__logo-item--secondary">
+        <a class="header__logo-text" href="index.html">
+          <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+        </a>
+      </div>
     </div>
-    <div class="header__logo-item header__logo-item--secondary">
-      <a class="header__logo-text" href="index.html">
-        <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
-      </a>
-    </div>
+    <nav class="header__nav nav nav--closed nav--nojs">
+      <div class="nav__toggle-wrapper">
+        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item ">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link " href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <nav class="header__nav nav nav--closed nav--nojs">
-    <div class="nav__toggle-wrapper">
-      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-    </div>
-    <div class="nav__wrapper">
-      <ul class="nav__list">
-        <li class="nav__item ">
-          <a class="nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link " href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--current" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 </header>
 <main class="main">
-  <h1 class="main__title main__title--form title">Подбор программы</h1>
   <section class="main__program-selection program-selection">
-    <div class="program-selection__wrapper">
-      <h2 class="visually-hidden">Анкета</h2>
-      <p class="program-selection__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
-      <form class="program-selection__form form">
+    <form class="program-selection__form form">
+      <div class="form__container container">
+        <h1 class="program-selection__title title">Подбор программы</h1>
+        <p class="program-selection__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__input-area">
+
           <div class="field-text">
             <label class="field-text__label" for="name">Имя:*</label>
             <input class="field-text__input" name="name" id="name" value="Барсик" required>
@@ -78,8 +80,10 @@
             <label class="field-radio__label" for="unknown">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
-        <fieldset class="form__proprietor-area">
-          <h2 class="form__title-proprietor subtitle subtitle--form">Контактные данные (владельца кота)</h2>
+      </div>
+      <fieldset class="form__proprietor-area">
+        <div class="form__proprietor-container container container--line">
+          <h2 class="form__title-proprietor subtitle">Контактные данные (владельца кота)</h2>
           <div class="form__area-text">
             <div class="field-text">
               <label class="field-text__label" for="email">E-mail:*</label>
@@ -94,13 +98,17 @@
               </div>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="form__comment-area">
-          <h2 class="form__title-comment subtitle subtitle--form">Комментарий</h2>
+        </div>
+      </fieldset>
+      <fieldset class="form__comment-area">
+        <div class="form__comment-container container container--line">
+          <h2 class="form__title-comment subtitle">Комментарий</h2>
           <textarea class="field-text__input field-text__input--comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
-        </fieldset>
-        <fieldset class="form__area-extra">
-          <h2 class="form__title-extra subtitle subtitle--form">Дополнительно</h2>
+        </div>
+      </fieldset>
+      <fieldset class="form__extra-area">
+        <div class="form__extra-container container container--line">
+          <h2 class="form__title-extra subtitle">Дополнительно</h2>
           <div class="form__checkbox-area">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="sweetener" checked>
@@ -119,27 +127,31 @@
               <label class="field-checkbox__label" for="vitamins">Витамины</label>
             </div>
           </div>
-        </fieldset>
-        <div class="form__footer">
+        </div>
+      </fieldset>
+      <div class="form__footer">
+        <div class="form__footer-container container">
           <button class="form__button button">Отправить заявку</button>
           <div class="form__obligatory">
             <span class="form__required-text">* – Обязательные поля</span>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </section>
   <section class="main__location location location--secondary">
-    <div class="location__wrapper">
-      <h2 class="visually-hidden">Наш адрес</h2>
+    <h2 class="visually-hidden">Наш адрес</h2>
+    <div class="location__wrapper container">
       <div class="location__address">
-        <h3 class="location__title">Приглашаем к сотрудничеству Дилеров!</h3>
+        <h3 class="location__title">Приглашаем к&nbsp;сотрудничеству Дилеров!</h3>
         <p class="location__text-container">
           <span class="location__text">ул. Большая Конюшенная, д. 19/8</span>
           <span class="location__text">Санкт-Петербург</span>
         </p>
       </div>
-      <picture class="location__map-wrapper">
+    </div>
+    <div class="location__map-wrapper">
+      <picture>
         <source srcset="img/content/location-desktop.png" media="(min-width: 1440px)">
         <source srcset="img/content/location-tablet.png" media="(min-width: 768px)">
         <img class="location__map" src="img/content/location-mobile.png" width="320" height="362" alt="Карта">

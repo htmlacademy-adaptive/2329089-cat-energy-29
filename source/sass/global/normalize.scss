@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-picture,
+source,
 img {
   display: block;
+}
+
+picture {
+  display: block;
+  height: 100%;
 }

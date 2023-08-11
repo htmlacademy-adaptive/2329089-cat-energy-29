@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet) {
     gap: 23px;
+    justify-content: end;
   }
 
   &:active {

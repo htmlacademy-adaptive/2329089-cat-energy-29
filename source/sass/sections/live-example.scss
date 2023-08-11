@@ -9,7 +9,7 @@
   background-size: 100vw;
 
   @media (min-width: $tablet) {
-    padding: 45px 31px 101px;
+    padding: 45px 0 101px;
     background-color: transparent;
     background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 250px, transparent 250px);
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px 75px;
+    padding: 0 0 75px;
     background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
   }
 }
@@ -162,6 +162,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  color: $secondary-text-color;
 
   @media (min-width: $tablet) {
     font-size: 20px;

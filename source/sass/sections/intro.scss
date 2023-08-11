@@ -4,35 +4,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 27px 20px 0;
+  padding: 27px 0 0;
 
   @media (min-width: $tablet) {
-    padding: 0 120px;
+    padding: 0;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 190px 100px;
+    padding: 0 0 100px;
   }
 }
 
-.intro__wrapper {
+.intro__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 
   @media (min-width: $tablet) {
     position: relative;
     align-items: start;
-    padding: 0 0 526px;
+    padding: 0 120px 526px;
   }
 
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 0 0 0;
+    padding: 0 80px;
   }
 }
 
@@ -145,7 +144,6 @@
     top: -120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
     height: calc(100% + 120px);
   }
 }

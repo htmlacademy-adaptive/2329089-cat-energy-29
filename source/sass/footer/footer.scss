@@ -4,15 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   background: $secondary-bg-color;
 
   @media (min-width: $tablet) {
-    padding: 55px 30px;
+    padding: 55px 0;
   }
 
   @media (min-width: $desktop) {
-    padding: 66px 110px;
+    padding: 66px 0;
   }
 }
 
@@ -53,4 +53,3 @@
     justify-self: end;
   }
 }
-

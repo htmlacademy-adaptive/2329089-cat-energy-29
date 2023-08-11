@@ -1,6 +1,7 @@
 @use "../global/variables" as *;
 
 .slider {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
 
@@ -55,7 +56,6 @@
 
   @media (min-width: $tablet) {
     height: 512px;
-
   }
 }
 
@@ -129,6 +129,3 @@
 .slider__control-circle:active > .slider__arrow-right {
   border-left-color: $hover-button-color;
 }
-
-
-

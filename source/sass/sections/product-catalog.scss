@@ -4,18 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $tablet) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0 110px;
-  }
-}
-
-.product-catalog__wrapper {
-  width: 100%;
 }
 
 .product-catalog__list {
