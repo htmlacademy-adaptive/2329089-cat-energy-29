@@ -30,6 +30,10 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop) {
+    gap: 0 224px;
+  }
 }
 
 .live-example__title {
@@ -39,6 +43,7 @@
   @media (min-width: 768px) {
     grid-column: span 2;
     margin: 0 0 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop) {
@@ -54,6 +59,7 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
+    line-height: 24px;
     margin: 0 0 55px;
     grid-column: span 2;
   }
@@ -96,6 +102,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  color: $secondary-text-color;
   padding: 14px 0 17px;
   border: 1px solid $primary-border-color;
   border-radius: 3px;
@@ -114,7 +121,7 @@
   margin: 0;
   padding: 0 15px;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
   color: $primary-text-color;
   background: $special-bg-color;
@@ -132,26 +139,27 @@
 .live-example__expenses {
   margin: 0 0 20px;
   justify-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2px;
 
   @media (min-width: $tablet) {
     margin: 0;
     justify-self: end;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     justify-content: end;
+    gap: 9px;
   }
 
   @media (min-width: $desktop) {
     justify-self: center;
     grid-column: 1;
     grid-row: 4;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 63px;
+    gap: 0 63px;
   }
 }
 
@@ -166,7 +174,7 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    justify-self: end;
+    align-self: end;
   }
 }
 
@@ -177,12 +185,12 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    margin: 104px 0 0;
+    margin-top: 99px;
     grid-column: span 2;
   }
 
   @media (min-width: $desktop) {
-    margin: 0;
+    margin-top: 0;
     grid-column: 2;
     grid-row: span 4;
   }
