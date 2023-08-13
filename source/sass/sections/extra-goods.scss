@@ -16,12 +16,11 @@
 }
 
 .extra-goods__title {
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 36px;
   line-height: 24px;
 
   @media (min-width: $tablet) {
-    margin-top: 0;
     margin-bottom: 80px;
     line-height: 36px;
     grid-column: span 2;

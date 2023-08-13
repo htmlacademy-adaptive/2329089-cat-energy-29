@@ -18,4 +18,14 @@
     padding: 0 40px 0;
     font-size: 36px;
   }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: -40px;
+    }
+  }
 }

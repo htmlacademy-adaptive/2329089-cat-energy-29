@@ -8,6 +8,14 @@
   @media (min-width: $desktop) {
     padding: 56px 0 0;
   }
+
+  &--secondary {
+    border-bottom: 1px solid $grey-light;
+
+    @media (min-width: $tablet) {
+      border-bottom: none;
+    }
+  }
 }
 
 .header__container {

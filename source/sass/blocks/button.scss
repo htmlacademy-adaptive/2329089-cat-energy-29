@@ -38,11 +38,14 @@
 
     &:hover {
       background: $grey-lighter;
-      color: rgba($primary-text-color, 0.3);
     }
 
     &:active {
       color: rgba($primary-text-color, 0.3);
+    }
+
+    &:focus {
+      outline: 2px solid $grey-medium;
     }
   }
 
