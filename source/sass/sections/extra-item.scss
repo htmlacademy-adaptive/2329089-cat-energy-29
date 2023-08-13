@@ -51,14 +51,12 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin: 10px 0;
-  font-size: 14px;
   line-height: 14px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, auto);
     gap: 0 29px;
-    font-size: 16px;
     line-height: 20px;
   }
 

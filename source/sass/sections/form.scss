@@ -9,7 +9,7 @@
   align-items: center;
 
   @media (min-width: $desktop) {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     gap: 0 80px;
   }
 }
@@ -39,7 +39,7 @@
   margin: 0 -20px 26px;
   padding: 22px 20px 20px;
   display: grid;
-  gap: 5px;
+  gap: 12px;
   border: 0;
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
@@ -155,7 +155,7 @@
 
 .form__checkbox-area {
   display: grid;
-  gap: 5px;
+  gap: 32px;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -195,7 +195,7 @@
 }
 
 .form__required-text {
-  font-size: 14px;
   line-height: 16px;
   text-align: center;
+  color: $secondary-text-color;
 }
