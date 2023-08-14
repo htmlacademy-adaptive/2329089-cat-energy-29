@@ -1,26 +1,5 @@
 @use "../global/variables" as *;
 
-.main__container {
-  border-bottom: 1px solid $grey-light;
-
-  @media (min-width: $tablet) {
-    border-bottom: none;
-  }
-}
-
-.main__title {
-  margin: 27px 0 41px;
-  text-align: left;
-
-  @media (min-width: $tablet) {
-    margin: 65px 0 84px;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 74px 0 84px;
-  }
-}
-
 .main__intro {
   position: relative;
   margin-bottom: 20px;
