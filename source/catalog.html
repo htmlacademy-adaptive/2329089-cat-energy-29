@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="header__logo-item header__logo-item--secondary">
-        <a class="header__logo-text" href="index.html">
+        <a class="header__logo-text" href="index.html" tabindex="-1">
           <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
         </a>
       </div>
@@ -242,14 +242,16 @@
           </button>
           <h3 class="product-item__title product-item__title--more">Показать ещё 100500 товаров</h3>
           <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
-          <button class="product-item__button product-item__button--show-all button button--secondary">Показать все</button>
+          <button class="product-item__button product-item__button--more button button--secondary">Показать все</button>
         </li>
       </ul>
     </div>
   </section>
   <section class="main__extra-goods extra-goods">
-    <div class="extra-goods__container container container--line">
-      <h2 class="extra-goods__title subtitle subtitle--catalog">Дополнительные товары</h2>
+    <h2 class="extra-goods__title subtitle subtitle--catalog">
+      <span class="subtitle__inner">Дополнительные товары</span>
+    </h2>
+    <div class="extra-goods__container container">
       <div class="extra-goods__wrapper">
         <ul class="extra-goods__list">
           <li class="extra-goods__item extra-item">

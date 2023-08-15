@@ -24,7 +24,7 @@
 
   &--more {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     padding-top: 25px;
 
     @media (min-width: $tablet) {
@@ -185,7 +185,7 @@
     margin: 32px 0 0;
   }
 
-  &--show-all {
+  &--more {
     margin: 0;
   }
 }

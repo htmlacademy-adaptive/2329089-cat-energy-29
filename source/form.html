@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="header__logo-item header__logo-item--secondary">
-        <a class="header__logo-text" href="index.html">
+        <a class="header__logo-text" href="index.html" tabindex="-1">
           <img class="header__logo-text-image" src="img/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
         </a>
       </div>
@@ -52,7 +52,6 @@
         <h1 class="program-selection__title title">Подбор программы</h1>
         <p class="program-selection__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__input-area">
-
           <div class="field-text">
             <label class="field-text__label" for="name">Имя:*</label>
             <input class="field-text__input" name="name" id="name" value="Барсик" required>
@@ -82,8 +81,10 @@
         </fieldset>
       </div>
       <fieldset class="form__proprietor-area">
-        <div class="form__proprietor-container container container--form container--line">
-          <h2 class="form__title-proprietor subtitle">Контактные данные (владельца кота)</h2>
+        <h2 class="form__title-proprietor subtitle">
+          <span class="subtitle__inner">Контактные данные (владельца кота)</span>
+        </h2>
+        <div class="form__proprietor-container container container--form">
           <div class="form__area-text">
             <div class="field-text">
               <label class="field-text__label" for="email">E-mail:*</label>
@@ -101,14 +102,18 @@
         </div>
       </fieldset>
       <fieldset class="form__comment-area">
-        <div class="form__comment-container container container--form container--line">
-          <h2 class="form__title-comment subtitle">Комментарий</h2>
-          <textarea class="field-text__input field-text__input--comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="6"></textarea>
+        <h2 class="form__title-comment subtitle">
+          <span class="subtitle__inner">Комментарий</span>
+        </h2>
+        <div class="form__comment-container container container--form">
+          <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="6"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__extra-area">
-        <div class="form__extra-container container container--form container--line">
-          <h2 class="form__title-extra subtitle">Дополнительно</h2>
+        <h2 class="form__title-extra subtitle">
+          <span class="subtitle__inner">Дополнительно</span>
+        </h2>
+        <div class="form__extra-container container container--form">
           <div class="form__checkbox-area">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="sweetener" checked>

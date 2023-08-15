@@ -10,13 +10,14 @@
 
 .nav__list {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  align-items: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet) {
-    flex-flow: row nowrap;
+    flex-direction: row;
     gap: 33px;
   }
 }
