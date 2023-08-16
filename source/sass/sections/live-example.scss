@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop) {
     padding: 0 0 75px;
-    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
+    background-image: linear-gradient(to bottom, transparent 136px, rgba($special-bg-color, 0.85) 136px);
   }
 }
 
@@ -80,6 +80,7 @@
   gap: 32px;
 
   @media (min-width: $tablet) {
+    justify-self: start;
     grid-template-columns: repeat(2, 162px);
     margin: 0;
   }
@@ -127,6 +128,7 @@
   background: $special-bg-color;
 
   @media (min-width: $tablet) {
+    white-space: nowrap;
     font-size: 14px;
     background: $secondary-color;
   }
@@ -153,7 +155,7 @@
   }
 
   @media (min-width: $desktop) {
-    justify-self: center;
+    justify-self: start;
     grid-column: 1;
     grid-row: 4;
     flex-direction: row;

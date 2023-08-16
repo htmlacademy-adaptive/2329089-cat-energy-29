@@ -41,11 +41,7 @@
   }
 }
 
-.product-item__button-more {
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
+.product-item__picture-more {
   margin-bottom: 23px;
 
   @media (min-width: $tablet) {
@@ -54,15 +50,6 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 40px;
-  }
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 

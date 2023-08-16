@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="header header--secondary">
-  <div class="header__container container container--form">
+<header class="header">
+  <div class="header__container container container--narrow">
     <div class="header__list">
       <div class="header__logo-item">
         <a class="header__logo" href="index.html">
@@ -48,8 +48,8 @@
 <main class="main">
   <section class="main__program-selection program-selection">
     <form class="program-selection__form form">
-      <div class="form__container container container--form">
-        <h1 class="program-selection__title title">Подбор программы</h1>
+      <div class="form__container container container--narrow">
+        <h1 class="program-selection__title title-h1">Подбор программы</h1>
         <p class="program-selection__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__input-area">
           <div class="field-text">
@@ -81,10 +81,10 @@
         </fieldset>
       </div>
       <fieldset class="form__proprietor-area">
-        <h2 class="form__title-proprietor subtitle">
-          <span class="subtitle__inner">Контактные данные (владельца кота)</span>
-        </h2>
-        <div class="form__proprietor-container container container--form">
+        <div class="form__proprietor-title title-wrapper">
+          <h2 class="title-h2">Контактные данные (владельца кота)</h2>
+        </div>
+        <div class="form__proprietor-container container container--narrow">
           <div class="form__area-text">
             <div class="field-text">
               <label class="field-text__label" for="email">E-mail:*</label>
@@ -102,18 +102,18 @@
         </div>
       </fieldset>
       <fieldset class="form__comment-area">
-        <h2 class="form__title-comment subtitle">
-          <span class="subtitle__inner">Комментарий</span>
-        </h2>
-        <div class="form__comment-container container container--form">
+        <div class="form__comment-title title-wrapper">
+          <h2 class="title-h2">Комментарий</h2>
+        </div>
+        <div class="form__comment-container container container--narrow">
           <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="6"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__extra-area">
-        <h2 class="form__title-extra subtitle">
-          <span class="subtitle__inner">Дополнительно</span>
-        </h2>
-        <div class="form__extra-container container container--form">
+        <div class="form__extra-title title-wrapper">
+          <h2 class="title-h2">Дополнительно</h2>
+        </div>
+        <div class="form__extra-container container container--narrow">
           <div class="form__checkbox-area">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="sweetener" checked>
@@ -135,7 +135,7 @@
         </div>
       </fieldset>
       <div class="form__footer">
-        <div class="form__footer-container container--form container">
+        <div class="form__footer-container container--narrow container">
           <button class="form__button button">Отправить заявку</button>
           <div class="form__obligatory">
             <span class="form__required-text">* – Обязательные поля</span>
@@ -146,7 +146,7 @@
   </section>
   <section class="main__location location location--secondary">
     <h2 class="visually-hidden">Наш адрес</h2>
-    <div class="location__wrapper container container--form">
+    <div class="location__wrapper container container--narrow">
       <div class="location__address">
         <h3 class="location__title">Приглашаем к&nbsp;сотрудничеству Дилеров!</h3>
         <p class="location__text-container">
@@ -166,7 +166,7 @@
   </section>
 </main>
 <footer class="page__footer footer">
-  <div class="footer__container container container--form">
+  <div class="footer__container container container--narrow">
     <div class="footer__item">
       <a class="footer__logo-text" href="index.html">
         <img class="footer__logo-text-image" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">

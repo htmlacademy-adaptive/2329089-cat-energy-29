@@ -6,8 +6,9 @@
 @use "blocks/page";
 @use "blocks/container";
 @use "blocks/button";
-@use "global/title";
-@use "global/subtitle";
+@use "global/title-h1";
+@use "global/title-h2";
+@use "global/title-wrapper";
 @use "header/header";
 @use "header/nav";
 @use "blocks/main";
