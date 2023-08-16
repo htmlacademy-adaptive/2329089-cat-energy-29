@@ -1,19 +1,11 @@
-/* stylelint-disable-line value-keyword-case */
-/* stylelint-disable-line value-keyword-case */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-source,
 img {
   display: block;
-}
-
-picture {
-  display: block;
-  height: 100%;
 }
 
 .visually-hidden {
@@ -54,7 +46,7 @@ picture {
 
 .page__body {
   margin: 0;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -85,19 +77,19 @@ picture {
   }
 }
 @media (min-width: 768px) {
-  .container--form {
+  .container--narrow {
     padding: 0 70px;
   }
 }
 @media (min-width: 1440px) {
-  .container--form {
+  .container--narrow {
     padding: 0;
   }
 }
 
 .button {
   padding: 9px 20px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -150,8 +142,8 @@ picture {
   }
 }
 
-.title {
-  font-family: "Oswald", Arial, sans-serif;
+.title-h1 {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -159,12 +151,36 @@ picture {
   color: #000000;
 }
 @media (min-width: 768px) {
-  .title {
+  .title-h1 {
     font-size: 60px;
   }
 }
 
-.subtitle {
+.title-h2 {
+  margin: 0;
+  text-align: left;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .title-h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+.title-h2--low {
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .title-h2--low {
+    line-height: 36px;
+  }
+}
+
+.title-wrapper {
   display: grid;
   grid-template-columns: 0 auto 1fr;
   gap: 20px;
@@ -172,54 +188,48 @@ picture {
   margin: 0;
 }
 @media (min-width: 768px) {
-  .subtitle {
+  .title-wrapper {
     grid-template-columns: 30px auto 1fr;
     gap: 40px;
   }
 }
 @media (min-width: 1440px) {
-  .subtitle {
+  .title-wrapper {
     grid-template-columns: auto auto 1fr;
   }
 }
-.subtitle::before, .subtitle::after {
+.title-wrapper::before, .title-wrapper::after {
   content: "";
   display: block;
-  height: 20px;
+  height: 15px;
   border-bottom: 2px solid #68b738;
 }
-.subtitle::before {
+@media (min-width: 768px) {
+  .title-wrapper::before, .title-wrapper::after {
+    height: 20px;
+  }
+}
+.title-wrapper::before {
   width: 0;
 }
 @media (min-width: 768px) {
-  .subtitle::before {
+  .title-wrapper::before {
     width: 30px;
   }
 }
 @media (min-width: 1440px) {
-  .subtitle::before {
+  .title-wrapper::before {
     width: calc(50vw - 610px - 40px);
   }
 }
 
-.subtitle__inner {
-  max-width: 340px;
-  text-align: left;
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  color: #000000;
+.header {
+  border-bottom: 1px solid #d9d9d9;
 }
-@media (min-width: 768px) {
-  .subtitle__inner {
-    font-size: 36px;
-  }
-}
-
 @media (min-width: 768px) {
   .header {
     padding: 25px 0 0;
+    border-bottom: none;
   }
 }
 @media (min-width: 1440px) {
@@ -227,13 +237,8 @@ picture {
     padding: 56px 0 0;
   }
 }
-.header--secondary {
-  border-bottom: 1px solid #d9d9d9;
-}
-@media (min-width: 768px) {
-  .header--secondary {
-    border-bottom: none;
-  }
+.header--index {
+  border: none;
 }
 
 .header__container {
@@ -350,6 +355,7 @@ picture {
 @media (min-width: 768px) {
   .nav__list {
     flex-direction: row;
+    align-items: center;
     gap: 33px;
   }
 }
@@ -376,7 +382,7 @@ picture {
   width: 100%;
   padding: 22px 0 24px;
   text-align: center;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
@@ -625,7 +631,7 @@ picture {
 
 .intro__slogan {
   margin: 0 0 29px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1;
   text-align: center;
@@ -791,6 +797,7 @@ picture {
 .categories-card {
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   justify-content: center;
   align-items: center;
   gap: 0 20px;
@@ -800,7 +807,7 @@ picture {
 @media (min-width: 768px) {
   .categories-card {
     gap: 0 19px;
-    padding: 77px 29px 57px 52px;
+    padding: 77px 28px 57px 52px;
   }
 }
 @media (min-width: 1440px) {
@@ -814,7 +821,7 @@ picture {
   grid-column: 2;
   grid-row: 1;
   margin: 0;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -838,8 +845,11 @@ picture {
 }
 
 .categories-card__icon-wrapper {
+  margin-left: -8px;
   grid-column: 1;
   grid-row: 1;
+  width: 67px;
+  height: 53px;
 }
 @media (min-width: 768px) {
   .categories-card__icon-wrapper {
@@ -850,51 +860,27 @@ picture {
     justify-content: center;
     align-items: center;
     width: 268px;
-  }
-}
-@media (min-width: 1440px) {
-  .categories-card__icon-wrapper {
-    margin: 0 0 39px;
-    grid-column: 1;
-    grid-row: 1;
-    width: auto;
-  }
-}
-
-.categories-card__icon--slim {
-  width: 50px;
-  height: 53px;
-}
-@media (min-width: 768px) {
-  .categories-card__icon--slim {
-    width: 200px;
     height: 211px;
   }
 }
 @media (min-width: 1440px) {
-  .categories-card__icon--slim {
-    width: 100px;
+  .categories-card__icon-wrapper {
+    margin: 0 0 39px -18px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 134px;
     height: 106px;
   }
 }
-.categories-card__icon--pro {
-  width: 67px;
-  height: 50px;
-}
-@media (min-width: 768px) {
-  .categories-card__icon--pro {
-    width: 268px;
-    height: 200px;
-  }
-}
-@media (min-width: 1440px) {
-  .categories-card__icon--pro {
-    width: 134px;
-    height: 100px;
-  }
+
+.categories-card__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .categories-card__description {
+  align-self: start;
   grid-column: span 2;
   margin: 0;
   padding: 22px 0 23px;
@@ -949,7 +935,7 @@ picture {
 }
 
 .categories-card__link-text {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
   text-align: center;
@@ -973,11 +959,11 @@ picture {
 .categories-card__link-icon {
   position: relative;
   right: 8px;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .categories-card__link:hover .categories-card__link-icon {
-  right: 0;
+  transform: translateX(8px);
 }
 
 .how-work {
@@ -1061,7 +1047,7 @@ picture {
     right: 0;
     top: -40px;
     content: counter(new);
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     line-height: 1;
     color: #f2f2f2;
@@ -1116,7 +1102,7 @@ picture {
 @media (min-width: 1440px) {
   .live-example {
     padding: 0 0 75px;
-    background-image: linear-gradient(to top, rgba(234, 234, 234, 0.85) 462px, transparent 462px);
+    background-image: linear-gradient(to bottom, transparent 136px, rgba(234, 234, 234, 0.85) 136px);
   }
 }
 
@@ -1185,6 +1171,7 @@ picture {
 }
 @media (min-width: 768px) {
   .live-example__result-list {
+    justify-self: start;
     grid-template-columns: repeat(2, 162px);
     margin: 0;
   }
@@ -1203,7 +1190,7 @@ picture {
 }
 
 .live-example__number {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -1235,6 +1222,7 @@ picture {
 }
 @media (min-width: 768px) {
   .live-example__description {
+    white-space: nowrap;
     font-size: 14px;
     background: #ffffff;
   }
@@ -1264,7 +1252,7 @@ picture {
 }
 @media (min-width: 1440px) {
   .live-example__expenses {
-    justify-self: center;
+    justify-self: start;
     grid-column: 1;
     grid-row: 4;
     flex-direction: row;
@@ -1276,7 +1264,7 @@ picture {
 
 .live-example__expenses-text {
   margin: 0;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -1491,7 +1479,7 @@ picture {
 
 .location__title {
   margin: 0;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1781,29 +1769,18 @@ picture {
   }
 }
 
-.product-item__button-more {
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
+.product-item__picture-more {
   margin-bottom: 23px;
 }
 @media (min-width: 768px) {
-  .product-item__button-more {
+  .product-item__picture-more {
     margin-bottom: 50px;
   }
 }
 @media (min-width: 1440px) {
-  .product-item__button-more {
+  .product-item__picture-more {
     margin-bottom: 40px;
   }
-}
-.product-item__button-more:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-.product-item__button-more:active {
-  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -1834,7 +1811,7 @@ picture {
   align-self: center;
   margin: 10px 0;
   padding-right: 25px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1949,13 +1926,13 @@ picture {
   }
 }
 
-.extra-goods__title {
+.extra-goods__title-wrapper {
   margin-top: 0;
   margin-bottom: 36px;
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  .extra-goods__title {
+  .extra-goods__title-wrapper {
     margin-bottom: 80px;
     line-height: 36px;
     grid-column: span 2;
@@ -2023,7 +2000,7 @@ picture {
 
 .extra-item__title {
   margin: 0 0 10px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -2134,7 +2111,7 @@ picture {
 
 .program-selection__description {
   margin: 0 0 39px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2212,19 +2189,17 @@ picture {
   }
 }
 
-.form__title-proprietor {
+.form__proprietor-title {
   margin-top: 0;
   margin-bottom: 35px;
-  line-height: 26px;
 }
 @media (min-width: 768px) {
-  .form__title-proprietor {
+  .form__proprietor-title {
     margin-bottom: 76px;
-    line-height: 36px;
   }
 }
 @media (min-width: 1440px) {
-  .form__title-proprietor {
+  .form__proprietor-title {
     grid-column: span 2;
   }
 }
@@ -2252,19 +2227,17 @@ picture {
   }
 }
 
-.form__title-comment {
+.form__comment-title {
   margin-top: 0;
   margin-bottom: 38px;
-  line-height: 26px;
 }
 @media (min-width: 768px) {
-  .form__title-comment {
+  .form__comment-title {
     margin-bottom: 87px;
-    line-height: 36px;
   }
 }
 @media (min-width: 1440px) {
-  .form__title-comment {
+  .form__comment-title {
     margin-bottom: 78px;
     grid-column: span 2;
   }
@@ -2287,19 +2260,17 @@ picture {
   }
 }
 
-.form__title-extra {
+.form__extra-title {
   margin-top: 0;
   margin-bottom: 34px;
-  line-height: 26px;
 }
 @media (min-width: 768px) {
-  .form__title-extra {
+  .form__extra-title {
     margin-bottom: 57px;
-    line-height: 36px;
   }
 }
 @media (min-width: 1440px) {
-  .form__title-extra {
+  .form__extra-title {
     grid-column: span 2;
   }
 }
@@ -2378,7 +2349,7 @@ picture {
   width: 100%;
   min-width: 250px;
   padding: 14px 15px 13px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -2404,7 +2375,7 @@ picture {
   border-color: #ff8282;
 }
 .form__textarea::placeholder {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2430,7 +2401,7 @@ picture {
 .field-text__input-wrapper--email::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 14px;
   width: 20px;
   height: 20px;
@@ -2440,10 +2411,15 @@ picture {
   background-size: 20px 20px;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .field-text__input-wrapper--email::after {
+    top: 16px;
+  }
+}
 .field-text__input-wrapper--phone::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 14px;
   width: 20px;
   height: 20px;
@@ -2452,12 +2428,16 @@ picture {
   background-size: 20px 20px;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .field-text__input-wrapper--phone::after {
+    top: 16px;
+  }
+}
 
 .field-text__input {
   width: 100%;
-  min-width: 250px;
   padding: 14px 15px 13px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -2466,6 +2446,7 @@ picture {
 }
 @media (min-width: 768px) {
   .field-text__input {
+    min-width: 250px;
     padding: 11px 20px;
     font-size: 20px;
     line-height: normal;
@@ -2482,7 +2463,7 @@ picture {
   border-color: #ff8282;
 }
 .field-text__input::placeholder {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2497,6 +2478,7 @@ picture {
 }
 .field-text__input--email, .field-text__input--phone {
   border: 1px solid #cdcdcd;
+  padding-right: 40px;
 }
 .field-text__input--comment {
   resize: none;
@@ -2504,7 +2486,7 @@ picture {
 
 .field-text__label {
   align-self: center;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -2535,7 +2517,7 @@ picture {
 .field-radio__label {
   position: relative;
   padding: 6px 0 6px 46px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -2613,7 +2595,7 @@ picture {
 .field-checkbox__label {
   position: relative;
   padding: 6px 0 6px 46px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #000000;

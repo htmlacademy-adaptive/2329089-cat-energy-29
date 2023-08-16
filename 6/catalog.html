@@ -8,7 +8,7 @@
   <base href="https://htmlacademy-adaptive.github.io/2329089-cat-energy-29/6/">
 </head>
 <body class="page__body">
-<header class="header header--secondary">
+<header class="header">
   <div class="header__container container">
     <div class="header__list">
       <div class="header__logo-item">
@@ -49,7 +49,7 @@
 <main class="main">
   <section class="main__product-catalog product-catalog">
     <div class="product-catalog__container">
-      <h1 class="product-catalog__title title">Каталог продукции</h1>
+      <h1 class="product-catalog__title title-h1">Каталог продукции</h1>
       <h2 class="visually-hidden">Список каталога</h2>
       <ul class="product-catalog__list">
         <li class="product-catalog__item product-item">
@@ -235,12 +235,12 @@
           <button class="product-item__button button">Заказать</button>
         </li>
         <li class="product-catalog__item product-item product-item--more">
-          <button class="product-item__button-more">
+          <div class="product-item__picture-more">
             <picture>
               <source srcset="img/icons/plus-tablet.svg" media="(min-width: 768px)">
               <img class="product-item__icon-more" src="img/icons/plus-mobile.svg" height="30" width="30" alt="">
             </picture>
-          </button>
+          </div>
           <h3 class="product-item__title product-item__title--more">Показать ещё 100500 товаров</h3>
           <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
           <button class="product-item__button product-item__button--more button button--secondary">Показать все</button>
@@ -249,9 +249,9 @@
     </div>
   </section>
   <section class="main__extra-goods extra-goods">
-    <h2 class="extra-goods__title subtitle subtitle--catalog">
-      <span class="subtitle__inner">Дополнительные товары</span>
-    </h2>
+    <div class="extra-goods__title-wrapper title-wrapper">
+      <h2 class="title-h2 title-h2--low">Дополнительные товары</h2>
+    </div>
     <div class="extra-goods__container container">
       <div class="extra-goods__wrapper">
         <ul class="extra-goods__list">
