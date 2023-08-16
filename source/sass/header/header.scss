@@ -1,12 +1,19 @@
 @use "../global/variables" as *;
 
 .header {
+  border-bottom: 1px solid $grey-light;
+
   @media (min-width: $tablet) {
     padding: 25px 0 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop) {
     padding: 56px 0 0;
+  }
+
+  &--index {
+    border: none;
   }
 }
 
@@ -17,6 +24,7 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: auto 1fr;
+    gap: 20px;
   }
 }
 

@@ -10,13 +10,15 @@
 
 .nav__list {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  align-items: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet) {
-    flex-flow: row nowrap;
+    flex-direction: row;
+    align-items: center;
     gap: 33px;
   }
 }
@@ -66,19 +68,18 @@
     opacity: 0.3;
   }
 
-  &--inverted {
-    border-color: $secondary-color;
-
-    @media (min-width: $desktop) {
-      color: $secondary-color;
-    }
-  }
-
   &--current {
     @media (min-width: $tablet) {
       padding: 0 0 5px;
       margin: 0 0 -5px;
       border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  &--inverted {
+    @media (min-width: $desktop) {
+      color: $secondary-color;
+      border-color: $secondary-color;
     }
   }
 }
@@ -114,6 +115,12 @@
 
   &:hover {
     cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    cursor: pointer;
+    opacity: 0.3;
   }
 }
 

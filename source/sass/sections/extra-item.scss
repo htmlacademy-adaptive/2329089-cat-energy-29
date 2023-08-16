@@ -14,7 +14,7 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr auto;
     gap: 23px;
-    padding: 26px 25px 28px;
+    padding: 26px 37px 28px;
     border: 1px solid $primary-border-color;
   }
 
@@ -51,26 +51,18 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin: 10px 0;
-  font-size: 14px;
   line-height: 14px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, auto);
     gap: 0 29px;
-    font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr auto;
   }
-}
-
-.extra-item__parameter {
-  font-size: 14px;
-  line-height: 14px;
-  color: $primary-text-color;
 }
 
 .extra-item__value {

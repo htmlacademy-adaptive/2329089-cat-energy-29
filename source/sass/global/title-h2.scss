@@ -1,21 +1,24 @@
 @use "variables" as *;
 
-.subtitle {
-  position: relative;
-  display: inline-block;
-  margin-left: -20px;
-  padding: 0 20px 0;
+.title-h2 {
+  margin: 0;
   text-align: left;
   font-family: $secondary-font-family;
   font-size: 24px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 26px;
   color: $secondary-text-color;
-  background-color: $primary-bg-color;
 
   @media (min-width: $tablet) {
-    margin-left: -40px;
-    padding: 0 40px 0;
     font-size: 36px;
+    line-height: 36px;
+  }
+
+  &--low {
+    line-height: 24px;
+
+    @media (min-width: $tablet) {
+      line-height: 36px;
+    }
   }
 }

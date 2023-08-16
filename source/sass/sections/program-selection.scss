@@ -7,19 +7,20 @@
 }
 
 .program-selection__title {
-  grid-column: span 2;
+  margin: 27px 0 37px;
 
   @media (min-width: $tablet) {
     margin: 65px 0 54px;
   }
 
   @media (min-width: $desktop) {
+    grid-column: span 2;
     margin: 74px 0 55px;
   }
 }
 
 .program-selection__description {
-  grid-column: span 2;
+  margin: 0 0 39px;
   font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 18px;
@@ -31,5 +32,9 @@
     width: 330px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: span 2;
   }
 }

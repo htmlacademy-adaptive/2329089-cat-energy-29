@@ -1,33 +1,5 @@
 @use "../global/variables" as *;
 
-.main__title {
-  margin: 27px 0 41px;
-  padding: 0 20px;
-  text-align: left;
-
-  @media (min-width: $tablet) {
-    margin: 65px 0 84px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 74px 0 84px;
-    padding: 0 110px;
-  }
-
-  &--form {
-    @media (min-width: $tablet) {
-      margin: 65px 0 54px;
-      padding: 0 70px;
-    }
-
-    @media (min-width: $desktop) {
-      margin: 74px 0 55px;
-      padding: 0 110px;
-    }
-  }
-}
-
 .main__intro {
   position: relative;
   margin-bottom: 20px;
@@ -37,7 +9,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 50px;
+    margin-bottom: 82px;
   }
 }
 
@@ -61,11 +33,13 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
   }
 }
 
 .main__product-catalog {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet) {
     margin-bottom: 70px;
   }
@@ -76,7 +50,7 @@
 }
 
 .main__extra-goods {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet) {
     margin-bottom: 75px;
@@ -88,7 +62,7 @@
 }
 
 .main__program-selection {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet) {
     margin-bottom: 60px;
