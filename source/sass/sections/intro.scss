@@ -159,6 +159,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/cat-background-mobile-2x.jpg");
+  }
+
   @media (min-width: $desktop) {
     width: 100%;
     height: 100%;
@@ -166,6 +170,10 @@
     grid-row: 1;
     background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/cat-background-desktop.jpg");
     background-position: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/cat-background-desktop-2x.jpg");
+    }
   }
 }
 
