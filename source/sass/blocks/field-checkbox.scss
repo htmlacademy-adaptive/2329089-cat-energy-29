@@ -50,7 +50,7 @@
 }
 
 .field-checkbox__input:checked ~ .field-checkbox__label::before {
-  background: url("../img/icons/icon-tick.svg") no-repeat center;
+  background: url("../img/icons/tick.svg") no-repeat center;
   background-size: 21px auto;
   background-clip: content-box;
 }
