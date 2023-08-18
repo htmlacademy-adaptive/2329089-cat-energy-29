@@ -41,8 +41,51 @@
   margin-bottom: -1px;
 }
 
-.extra-goods__gift {
+.extra-goods__gift-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 58px 61px 43px 58px;
+  background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
+  image-set(
+      url("../img/content/gift-mobile.jpg") 1x,
+      url("../img/content/gift-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 264px;
+    padding: 57px 125px 60px 77px;
+    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
+    image-set(
+        url("../img/content/gift-tablet.jpg") 1x,
+        url("../img/content/gift-tablet@2x.jpg") 2x
+    );
+  }
+
   @media (min-width: $desktop) {
     align-self: stretch;
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 42px 43px;
+    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
+    image-set(
+        url("../img/content/gift-desktop.jpg") 1x,
+        url("../img/content/gift-desktop@2x.jpg") 2x
+    );
   }
+}
+
+.extra-goods__gift-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $secondary-color;
 }
