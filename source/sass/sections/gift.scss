@@ -13,7 +13,7 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-mobile-2x.jpg");
+    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet) {
@@ -23,7 +23,7 @@
     background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-tablet-2x.jpg");
+      background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-tablet@2x.jpg");
     }
   }
 
@@ -34,7 +34,7 @@
     background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-desktop-2x.jpg");
+      background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-desktop@2x.jpg");
     }
   }
 }
