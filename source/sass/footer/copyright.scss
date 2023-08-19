@@ -23,6 +23,10 @@
     justify-content: flex-end;
   }
 
+  &:hover > .copyright__image {
+    fill: $primary-color;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -31,4 +35,8 @@
 .copyright__text {
   line-height: 20px;
   color: $primary-text-color;
+}
+
+.copyright__image {
+  fill: $grey-dim;
 }

@@ -22,9 +22,19 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover > .social__image {
+    fill: $primary-color;
+  }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.social__image {
+  fill: $grey-dim;
 }
