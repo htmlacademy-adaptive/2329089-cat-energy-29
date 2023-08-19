@@ -20,7 +20,7 @@
   @media (min-width: $tablet) {
     width: auto;
     gap: 23px;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   &:active {

@@ -16,7 +16,7 @@
     position: absolute;
     height: 400px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 }
@@ -63,7 +63,6 @@
   justify-content: start;
   align-content: start;
   margin: 0;
-  text-align: left;
   line-height: 20px;
   color: $primary-text-color;
 
@@ -108,6 +107,7 @@
 
 .location__map-picture {
   display: none;
+  height: 100%;
 
   &--nojs {
     display: block;
