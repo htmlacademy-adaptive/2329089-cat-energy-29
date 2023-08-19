@@ -42,9 +42,9 @@
 }
 
 .extra-goods__gift-banner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   gap: 48px;
   padding: 58px 61px 43px 58px;
@@ -59,7 +59,7 @@
 
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    grid-template-columns: repeat(2, auto);
     gap: 264px;
     padding: 57px 125px 60px 77px;
     background-image: $primary-linear-gradient,
@@ -82,10 +82,27 @@
   }
 }
 
+.extra-goods__gift-image {
+  fill: $secondary-color;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 83px;
+  }
+}
+
 .extra-goods__gift-text {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $secondary-color;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
 }

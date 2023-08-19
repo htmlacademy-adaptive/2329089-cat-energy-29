@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 20px 25px;
-  border-top: 1px solid $grey-lighter;
+  border-top: 1px solid $grey-very-light;
 
   @media (min-width: $tablet) {
     align-self: stretch;
@@ -22,13 +22,12 @@
   &--more {
     grid-template-columns: 1fr;
     justify-items: center;
-    border-bottom: 1px solid $grey-lighter;
+    border-bottom: 1px solid $grey-very-light;
 
     @media (min-width: $tablet) {
       background: transparent;
       height: calc(100% - 81px);
       margin-top: 81px;
-      padding-top: -81px;
       border: 1px solid $secondary-bg-color;
     }
   }
@@ -52,6 +51,7 @@
   }
 
   &--more {
+    grid-row: 1;
     align-items: flex-end;
 
     @media (min-width: $tablet) {
@@ -71,6 +71,8 @@
   align-self: end;
   width: 30px;
   height: 30px;
+  stroke: $grey-light;
+  fill: none;
 
   @media (min-width: $tablet) {
     width: 60px;
@@ -79,6 +81,20 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 40px;
+  }
+}
+
+.product-item__icon-mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.product-item__icon-tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
   }
 }
 

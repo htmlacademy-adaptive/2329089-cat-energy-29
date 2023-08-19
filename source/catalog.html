@@ -225,10 +225,10 @@
         </li>
         <li class="product-catalog__item product-item product-item--more">
           <div class="product-item__image-wrapper product-item__image-wrapper--more">
-            <picture>
-              <source srcset="img/icons/plus-tablet.svg" media="(min-width: 768px)">
-              <img class="product-item__icon-more" src="img/icons/plus-mobile.svg" height="30" width="30" alt="">
-            </picture>
+            <svg class="product-item__icon-more" height="30" width="30">
+              <use class="product-item__icon-mobile" xlink:href="img/sprite.svg#plus-mobile"></use>
+              <use class="product-item__icon-tablet" xlink:href="img/sprite.svg#plus-tablet"></use>
+            </svg>
           </div>
           <h3 class="product-item__title product-item__title--more">Показать ещё 100500 товаров</h3>
           <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
@@ -278,8 +278,10 @@
           </li>
         </ul>
         <div class="extra-goods__gift-banner">
-          <img class="extra-goods__gift-image" src="img/icons/gift.svg" width="78" height="81" alt="">
-          <p class="extra-goods__gift-text">Закажите всё и получите чехол для кота в подарок!</p>
+          <svg class="extra-goods__gift-image" width="78" height="81">
+            <use xlink:href="img/sprite.svg#gift"></use>
+          </svg>
+          <p class="extra-goods__gift-text">Закажите всё и&nbsp;получите чехол для кота в подарок!</p>
         </div>
       </div>
     </div>
