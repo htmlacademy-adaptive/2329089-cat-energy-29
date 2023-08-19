@@ -155,10 +155,10 @@
   width: 100%;
   height: 302px;
   background-image: $primary-linear-gradient,
-  image-set(
+    image-set(
       url("../img/content/cat-background-mobile.jpg") type("image/jpg") 1dppx,
       url("../img/content/cat-background-mobile@2x.jpg") type("image/jpg") 2dppx
-  );
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -169,10 +169,10 @@
     grid-column: 2;
     grid-row: 1;
     background-image: $primary-linear-gradient,
-    image-set(
+      image-set(
         url("../img/content/cat-background-desktop.jpg") type("image/jpg") 1dppx,
         url("../img/content/cat-background-desktop@2x.jpg") type("image/jpg") 2dppx
-    );
+      );
     background-position: left;
   }
 }

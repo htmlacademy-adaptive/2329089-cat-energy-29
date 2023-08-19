@@ -1,0 +1,37 @@
+@use "../global/variables" as *;
+
+.text-input {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  border: 1px solid $primary-border-input;
+
+  &:hover {
+    border-color: $primary-border-color;
+  }
+
+  &:focus {
+    border-color: $primary-text-color;
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: $status-error;
+  }
+
+  &::placeholder {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    opacity: 0.7;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
