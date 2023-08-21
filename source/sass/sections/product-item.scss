@@ -67,17 +67,26 @@
   }
 }
 
-.product-item__icon-more {
+.product-item__icon-container {
+  position: relative;
   align-self: end;
   width: 30px;
   height: 30px;
-  stroke: $grey-light;
-  fill: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
   }
+}
+
+.product-item__icon-more {
+  position: absolute;
+  stroke: $grey-light;
+  fill: none;
 
   @media (min-width: $desktop) {
     margin-bottom: 40px;
