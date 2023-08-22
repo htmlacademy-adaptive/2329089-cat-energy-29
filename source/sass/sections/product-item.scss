@@ -46,7 +46,6 @@
   }
 
   @media (min-width: $tablet) {
-    width: 200px;
     height: 210px;
   }
 
@@ -81,16 +80,16 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .product-item__icon-more {
   position: absolute;
   stroke: $grey-light;
   fill: none;
-
-  @media (min-width: $desktop) {
-    margin-bottom: 40px;
-  }
 }
 
 .product-item__icon-mobile {
