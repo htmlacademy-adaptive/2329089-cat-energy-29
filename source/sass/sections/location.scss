@@ -59,29 +59,32 @@
 }
 
 .location__text-container {
-  display: grid;
-  justify-content: start;
-  align-content: start;
   margin: 0;
   line-height: 20px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
-    gap: 20px;
     justify-self: end;
+  }
+}
+
+.location__text {
+  display: block;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    width: 157px;
     text-align: right;
   }
 
   @media (min-width: $desktop) {
     text-align: left;
   }
-}
 
-.location__text {
-  margin: 0;
-
-  @media (min-width: $tablet) {
-    width: 157px;
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
   }
 }
 

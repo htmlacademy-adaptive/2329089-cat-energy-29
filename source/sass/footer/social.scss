@@ -26,15 +26,32 @@
   justify-content: center;
   align-items: center;
 
-  &:hover > .social__image {
-    fill: $primary-color;
-  }
-
   &:active {
     opacity: 0.3;
   }
-}
 
-.social__image {
-  fill: $grey-dim;
+  &::before {
+    content: "";
+    background-color: $grey-dim;
+    width: 28px;
+    height: 22px;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../img/sprite.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../img/sprite.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../img/sprite.svg#telegram");
+  }
+
+  &:hover::before {
+    background-color: $primary-color;
+  }
+
+
 }
