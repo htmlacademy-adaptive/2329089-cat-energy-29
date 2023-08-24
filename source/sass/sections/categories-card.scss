@@ -76,7 +76,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-
 }
 
 .categories-card__description {
@@ -130,7 +129,7 @@
     opacity: 0.3;
   }
 
-  &:hover .categories-card__link-arrow::before  {
+  &:hover .categories-card__link-arrow::before {
     transform: translateX(0);
   }
 }
