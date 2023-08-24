@@ -40,14 +40,18 @@
         url("../img/content/gift-desktop@2x.jpg") type("image/jpg") 2dppx
     );
   }
-}
 
-.gift-image {
-  fill: $secondary-color;
+  &::before {
+    content: "";
+    mask-image: url("../img/sprite.svg#gift");
+    background-color: $secondary-color;
+    width: 78px;
+    height: 81px;
 
-  @media (min-width: $tablet) {
-    width: 80px;
-    height: 83px;
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 83px;
+    }
   }
 }
 
