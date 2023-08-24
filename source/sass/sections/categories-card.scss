@@ -130,6 +130,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .categories-card__link-icon {
+    transform: translateX(0);
+  }
 }
 
 .categories-card__link-text {
@@ -146,22 +150,14 @@
 }
 
 .categories-card__link-arrow {
-  display: flex;
-  align-items: center;
   width: 32px;
-  //padding-right: 30px;
   overflow: hidden;
 }
 
 .categories-card__link-icon {
-  position: relative;
-  right: 8px;
   display: block;
   transition: transform 0.5s ease;
+  transform: translateX(-8px);
   fill: $secondary-text-color;
   stroke: $secondary-text-color;
-}
-
-.categories-card__link:hover .categories-card__link-icon {
-  transform: translateX(8px);
 }
