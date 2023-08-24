@@ -1,6 +1,7 @@
 @use "../global/variables" as *;
 
 .intro {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +13,41 @@
 
   @media (min-width: $desktop) {
     padding-bottom: 82px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 63%;
+    background-image: $primary-linear-gradient,
+      image-set(
+        url("../img/content/cat-background-mobile.jpg") type("image/jpg") 1dppx,
+        url("../img/content/cat-background-mobile@2x.jpg") type("image/jpg") 2dppx
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      left: 50%;
+      top: -120px;
+      width: 50%;
+      height: calc(100% + 120px);
+      background-image: $primary-linear-gradient,
+        image-set(
+          url("../img/content/cat-background-desktop.jpg") type("image/jpg") 1dppx,
+          url("../img/content/cat-background-desktop@2x.jpg") type("image/jpg") 2dppx
+      );
+      background-position: left;
+    }
   }
 }
 
@@ -120,69 +156,5 @@
     justify-self: start;
     grid-column: 1;
     grid-row: 3;
-  }
-}
-
-.intro__background-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 64% auto;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  height: 100%;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-
-  @media (min-width: $desktop) {
-    top: -120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: calc(100% + 120px);
-  }
-}
-
-.intro__background-image {
-  position: relative;
-  flex: 1 0 302px;
-  width: 100%;
-  height: 302px;
-  background-image: $primary-linear-gradient,
-    image-set(
-      url("../img/content/cat-background-mobile.jpg") type("image/jpg") 1dppx,
-      url("../img/content/cat-background-mobile@2x.jpg") type("image/jpg") 2dppx
-    );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-width: $desktop) {
-    width: 100%;
-    height: 100%;
-    grid-column: 2;
-    grid-row: 1;
-    background-image: $primary-linear-gradient,
-      image-set(
-        url("../img/content/cat-background-desktop.jpg") type("image/jpg") 1dppx,
-        url("../img/content/cat-background-desktop@2x.jpg") type("image/jpg") 2dppx
-      );
-    background-position: left;
-  }
-}
-
-.intro__background-color {
-  width: 100%;
-  height: 100%;
-
-  @media (min-width: $desktop) {
-    grid-column: 1;
-    grid-row: 1;
   }
 }
