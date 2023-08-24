@@ -26,30 +26,20 @@
   }
 }
 
-.footer__logo-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  text-align: center;
+.footer__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0;
-    justify-content: start;
-  }
-
-  &[href]:hover {
-    opacity: 0.8;
-  }
-
-  &[href]:active {
-    opacity: 0.6;
+    justify-content: flex-start;
   }
 }
 
-.footer__copyright {
+.footer__logo {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet) {
-    justify-self: end;
+    margin-bottom: 0;
   }
 }

@@ -76,8 +76,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  --circle-color: #{$primary-color};
-  --cat-color: #{$secondary-text-color};
+
 }
 
 .categories-card__description {
@@ -131,7 +130,7 @@
     opacity: 0.3;
   }
 
-  &:hover .categories-card__link-icon {
+  &:hover .categories-card__link-arrow::before  {
     transform: translateX(0);
   }
 }
@@ -152,12 +151,15 @@
 .categories-card__link-arrow {
   width: 32px;
   overflow: hidden;
-}
 
-.categories-card__link-icon {
-  display: block;
-  transition: transform 0.5s ease;
-  transform: translateX(-8px);
-  fill: $secondary-text-color;
-  stroke: $secondary-text-color;
+  &::before {
+    content: "";
+    display: block;
+    mask-image: url("../img/sprite.svg#arrow");
+    background-color: $secondary-text-color;
+    width: 32px;
+    height: 12px;
+    transition: transform 0.5s ease;
+    transform: translateX(-8px);
+  }
 }
