@@ -31,11 +31,9 @@
       </div>
     </div>
     <nav class="header__nav nav nav--closed nav--nojs">
-      <div class="nav__toggle-wrapper">
-        <button class="nav__toggle" type="button" aria-label="Открыть меню">
-          <span class="nav__toggle-inner"></span>
-        </button>
-      </div>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="nav__toggle-inner"></span>
+      </button>
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item ">
@@ -95,8 +93,8 @@
           <div class="form__area-text">
             <div class="field-text">
               <label class="field-text__label" for="email">E-mail:*</label>
-              <div class="field-text__input-wrapper field-text__input-wrapper--email">
-                <input class="field-text__input field-text__input--email text-input" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
+              <div class="field-text__input-wrapper">
+                <input class="field-text__input field-text__input--with-icon text-input" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
                 <svg class="field-text__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
@@ -104,8 +102,8 @@
             </div>
             <div class="field-text">
               <label class="field-text__label" for="phone">Телефон:*</label>
-              <div class="field-text__input-wrapper field-text__input-wrapper--phone">
-                <input class="field-text__input field-text__input--phone text-input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
+              <div class="field-text__input-wrapper">
+                <input class="field-text__input field-text__input--ith-icon text-input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
                 <svg class="field-text__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
@@ -180,42 +178,27 @@
 </main>
 <footer class="page__footer footer">
   <div class="footer__container container container--narrow">
-    <div class="footer__item">
+    <div class="footer__logo-wrapper">
       <a class="footer__logo-text" href="index.html" title="На главную страницу">
-        <img class="footer__logo-text-image" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+        <img class="footer__logo-icon" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
     </div>
-    <div class="footer__item social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы Вконтакте" title="Мы в Вконтакте">
-            <svg class="social__image" width="28" height="22">
-              <use xlink:href="img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы Вконтакте" title="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в Ютюбе" title="Мы в Ютюбе">
-            <svg class="social__image" width="28" height="22">
-              <use xlink:href="img/sprite.svg#youtube"></use>
-            </svg>
-          </a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Мы в Ютюбе" title="Мы в Ютюбе"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" aria-label="Мы в Телеграме" title="Мы в Телеграме">
-            <svg class="social__image" width="28" height="22">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" aria-label="Мы в Телеграме" title="Мы в Телеграме"></a>
         </li>
       </ul>
     </div>
-    <div class="footer__item copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" target="_blank" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
         <span class="copyright__text">HTML Academy</span>
-        <svg class="copyright__image" width="27" height="34">
-          <use xlink:href="img/sprite.svg#html-academy"></use>
-        </svg>
       </a>
     </div>
   </div>
