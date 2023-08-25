@@ -1,3 +1,5 @@
+@use "../global/variables" as *;
+
 *,
 *::before,
 *::after {
@@ -6,4 +8,9 @@
 
 img {
   display: block;
+}
+
+:root {
+  --primary-color: #{$primary-color};
+  --special-color: #{$special-color};
 }

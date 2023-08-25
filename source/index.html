@@ -30,9 +30,9 @@
       </div>
     </div>
     <nav class="header__nav nav nav--closed nav--nojs">
-      <div class="nav__toggle-wrapper">
-        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-      </div>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="nav__toggle-inner"></span>
+      </button>
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item ">
@@ -56,16 +56,15 @@
       <p class="intro__slogan">Занялся собой? Займись котом!</p>
       <div class="intro__image-wrapper">
         <picture>
+          <source type="image/webp" srcset="img/content/top-eat-desktop.webp, img/content/top-eat-desktop@2x.webp 2x" media="(min-width: 1440px)">
+          <source type="image/webp" srcset="img/content/top-eat-tablet.webp, img/content/top-eat-tablet@2x.webp 2x" media="(min-width: 768px)">
+          <source type="image/webp" srcset="img/content/top-eat-mobile.webp, img/content/top-eat-mobile@2x.webp 2x">
           <source srcset="img/content/top-eat-desktop.png, img/content/top-eat-desktop@2x.png 2x" media="(min-width: 1440px)">
           <source srcset="img/content/top-eat-tablet.png, img/content/top-eat-tablet@2x.png 2x" media="(min-width: 768px)">
           <img class="intro__image" src="img/content/top-eat-mobile.png" srcset="img/content/top-eat-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов">
         </picture>
       </div>
       <a class="intro__button button" href="form.html">Подобрать программу</a>
-    </div>
-    <div class="intro__background-wrapper">
-      <div class="intro__background-image"></div>
-      <div class="intro__background-color"></div>
     </div>
   </section>
   <section class="main__categories categories">
@@ -74,31 +73,31 @@
       <ul class="categories__list">
         <li class="categories__item categories-card">
           <div class="categories-card__icon-wrapper">
-            <img class="categories-card__icon" src="img/icons/cat-slim.svg" width="50" height="53" alt="">
+            <svg class="categories-card__icon" width="50" height="53">
+              <use xlink:href="img/sprite.svg#cat-slim"></use>
+            </svg>
           </div>
           <h3 class="categories-card__title">Похудение</h3>
           <p class="categories-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <div class="categories-card__link-wrapper">
             <a class="categories-card__link" href="catalog.html">
               <span class="categories-card__link-text">Каталог Slim</span>
-              <span class="categories-card__link-arrow">
-                <img class="categories-card__link-icon" src="img/icons/arrow.svg" width="32" height="12" alt="Иконка стрелки">
-              </span>
+              <span class="categories-card__link-arrow"></span>
             </a>
           </div>
         </li>
         <li class="categories__item categories-card">
           <div class="categories-card__icon-wrapper">
-            <img class="categories-card__icon" src="img/icons/cat-pro.svg" width="67" height="50" alt="">
+            <svg class="categories-card__icon" width="67" height="50">
+              <use xlink:href="img/sprite.svg#cat-pro"></use>
+            </svg>
           </div>
           <h3 class="categories-card__title">Набор массы</h3>
           <p class="categories-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <div class="categories-card__link-wrapper">
             <a class="categories-card__link" href="catalog.html">
               <span class="categories-card__link-text">Каталог Pro</span>
-              <span class="categories-card__link-arrow">
-                <img class="categories-card__link-icon" src="img/icons/arrow.svg" width="32" height="12" alt="Иконка стрелки">
-              </span>
+              <span class="categories-card__link-arrow"></span>
             </a>
           </div>
         </li>
@@ -110,27 +109,19 @@
       <h2 class="how-work__title title-h1">Как это работает</h2>
       <ul class="how-work__list">
         <li class="how-work__item">
-          <div class="how-work__picture">
-            <img class="how-work__icon" src="img/icons/leaf.svg" width="30" height="32" alt="">
-          </div>
+          <div class="how-work__icon how-work__icon--leaf"></div>
           <p class="how-work__description">Функциональное питание содержит только полезные питательные вещества</p>
         </li>
         <li class="how-work__item">
-          <div class="how-work__picture">
-            <img class="how-work__icon" src="img/icons/dust.svg" width="26" height="29" alt="">
-          </div>
+          <div class="how-work__icon how-work__icon--dust"></div>
           <p class="how-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="how-work__item">
-          <div class="how-work__picture">
-            <img class="how-work__icon" src="img/icons/eat.svg" width="25" height="30" alt="">
-          </div>
+          <div class="how-work__icon how-work__icon--eat"></div>
           <p class="how-work__description">Замените один-два приёма обычной еды на наше функциональное питание.</p>
         </li>
         <li class="how-work__item">
-          <div class="how-work__picture">
-            <img class="how-work__icon" src="img/icons/clock.svg" width="26" height="31" alt="">
-          </div>
+          <div class="how-work__icon how-work__icon--clock"></div>
           <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -200,34 +191,27 @@
 </main>
 <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__item">
-      <a class="footer__logo-text" href="#">
-        <img class="footer__logo-text-image" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+    <div class="footer__logo-wrapper">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-icon" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
     </div>
-    <div class="footer__item social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы Вконтакте" title="Мы в Вконтакте">
-            <img class="social__image" src="img/icons/vkontakte.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы Вконтакте" title="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в Ютюбе" title="Мы в Ютюбе">
-            <img class="social__image" src="img/icons/youtube.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Мы в Ютюбе" title="Мы в Ютюбе"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" aria-label="Мы в Телеграме" title="Мы в Телеграме">
-            <img class="social__image" src="img/icons/telegram.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" aria-label="Мы в Телеграме" title="Мы в Телеграме"></a>
         </li>
       </ul>
     </div>
-    <div class="footer__item copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" target="_blank" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="img/icons/html-academy.svg" width="27" height="34" alt="">
       </a>
     </div>
   </div>

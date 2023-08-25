@@ -2,8 +2,8 @@
 
 .social {
   padding: 20px 0;
-  border-top: 1px solid $grey-light;
-  border-bottom: 1px solid $grey-light;
+  border-top: 1px solid $grey-lighter;
+  border-bottom: 1px solid $grey-lighter;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -22,9 +22,34 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    background-color: $grey-dim;
+    width: 28px;
+    height: 22px;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../img/sprite.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../img/sprite.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../img/sprite.svg#telegram");
+  }
+
+  &:hover::before {
+    background-color: $primary-color;
   }
 }

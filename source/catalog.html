@@ -30,9 +30,9 @@
       </div>
     </div>
     <nav class="header__nav nav nav--closed nav--nojs">
-      <div class="nav__toggle-wrapper">
-        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-      </div>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="nav__toggle-inner"></span>
+      </button>
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item ">
@@ -53,7 +53,6 @@
   <section class="main__product-catalog product-catalog">
     <div class="product-catalog__container">
       <h1 class="product-catalog__title title-h1">Каталог продукции</h1>
-      <h2 class="visually-hidden">Список каталога</h2>
       <ul class="product-catalog__list">
         <li class="product-catalog__item product-item">
           <div class="product-item__image-wrapper">
@@ -225,10 +224,11 @@
         </li>
         <li class="product-catalog__item product-item product-item--more">
           <div class="product-item__image-wrapper product-item__image-wrapper--more">
-            <picture>
-              <source srcset="img/icons/plus-tablet.svg" media="(min-width: 768px)">
-              <img class="product-item__icon-more" src="img/icons/plus-mobile.svg" height="30" width="30" alt="">
-            </picture>
+            <div class="product-item__icon-container">
+              <svg class="product-item__icon-more" height="60" width="60">
+                <use xlink:href="img/sprite.svg#plus"></use>
+              </svg>
+            </div>
           </div>
           <h3 class="product-item__title product-item__title--more">Показать ещё 100500 товаров</h3>
           <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
@@ -277,9 +277,8 @@
             <button class="extra-item__button button">Заказать</button>
           </li>
         </ul>
-        <div class="extra-goods__gift-banner">
-          <img class="extra-goods__gift-image" src="img/icons/gift.svg" width="78" height="81" alt="">
-          <p class="extra-goods__gift-text">Закажите всё и получите чехол для кота в подарок!</p>
+        <div class="gift">
+          <p class="gift-text">Закажите всё и&nbsp;получите чехол для кота в подарок!</p>
         </div>
       </div>
     </div>
@@ -306,35 +305,28 @@
   </section>
 </main>
 <footer class="page__footer footer">
-  <div class="footer__container container">
-    <div class="footer__item">
+  <div class="footer__container container container--narrow">
+    <div class="footer__logo-wrapper">
       <a class="footer__logo-text" href="index.html" title="На главную страницу">
-        <img class="footer__logo-text-image" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
+        <img class="footer__logo-icon" src="img/icons/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
     </div>
-    <div class="footer__item social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы Вконтакте" title="Мы в Вконтакте">
-            <img class="social__image" src="img/icons/vkontakte.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы Вконтакте" title="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Мы в Ютюбе" title="Мы в Ютюбе">
-            <img class="social__image" src="img/icons/youtube.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Мы в Ютюбе" title="Мы в Ютюбе"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" target="_blank" aria-label="Мы в Телеграме" title="Мы в Телеграме">
-            <img class="social__image" src="img/icons/telegram.svg" width="28" height="22" alt="">
-          </a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" aria-label="Мы в Телеграме" title="Мы в Телеграме"></a>
         </li>
       </ul>
     </div>
-    <div class="footer__item copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" target="_blank" title="Онлайн‑курс «HTML и CSS. Адаптивная вёрстка и автоматизация»">
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" target="_blank" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="img/icons/html-academy.svg" width="27" height="34" alt="">
       </a>
     </div>
   </div>

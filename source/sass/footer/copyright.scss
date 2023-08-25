@@ -26,6 +26,18 @@
   &:active {
     opacity: 0.3;
   }
+
+  &::after {
+    content: "";
+    mask-image: url("../img/sprite.svg#html-academy");
+    background-color: $grey-dim;
+    width: 27px;
+    height: 34px;
+  }
+
+  &:hover::after {
+    background-color: $primary-color;
+  }
 }
 
 .copyright__text {

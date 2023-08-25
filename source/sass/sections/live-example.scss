@@ -139,34 +139,22 @@
 }
 
 .live-example__expenses {
-  margin: 0 0 20px;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
+  margin: 0;
+  text-align: center;
 
   @media (min-width: $tablet) {
-    margin: 0;
-    justify-self: end;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 9px;
+    text-align: right;
   }
 
   @media (min-width: $desktop) {
-    justify-self: start;
     grid-column: 1;
     grid-row: 4;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0 63px;
+    text-align: left;
   }
 }
 
 .live-example__expenses-text {
-  margin: 0;
+  display: inline-block;
   font-family: $secondary-font-family;
   font-size: 14px;
   line-height: 20px;
@@ -175,13 +163,29 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet) {
+    display: block;
     font-size: 20px;
     align-self: end;
     text-align: right;
   }
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-bottom: 9px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .live-example__slider {
+  margin-top: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

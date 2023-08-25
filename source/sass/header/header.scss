@@ -1,7 +1,7 @@
 @use "../global/variables" as *;
 
 .header {
-  border-bottom: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-lighter;
 
   @media (min-width: $tablet) {
     padding: 25px 0 0;
@@ -33,7 +33,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 13px 0 15px;
+  padding: 13px 0 14px;
 
   @media (min-width: $tablet) {
     display: flex;
