@@ -12,36 +12,42 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import replace from 'gulp-replace';
 
 // Styles
-
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', {sourcemaps: true})
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
-}
-
-// HTML
-
-const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
 }
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
+}
+
+// HTML
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(replace('.css', '.min.css'))
+    .pipe(replace('.js', '.min.js'))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
 }
 
 // Images
@@ -67,7 +73,7 @@ const createWebp = () => {
 
 // SVG
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/sprites/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/sprites/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
@@ -84,8 +90,9 @@ const sprite = () => {
 // Copy
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
+    'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -99,7 +106,6 @@ const clean = () => {
 };
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -113,14 +119,12 @@ const server = (done) => {
 }
 
 // Reload
-
 const reload = (done) => {
   browser.reload();
   done();
 }
 
 // Watcher
-
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
@@ -139,7 +143,7 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
+  )
 );
 
 // Default
@@ -158,4 +162,5 @@ export default gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+  )
+);
