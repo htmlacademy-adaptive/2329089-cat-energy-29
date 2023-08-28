@@ -9,10 +9,10 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 import replace from 'gulp-replace';
+import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
 export const styles = () => {
@@ -23,9 +23,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
 }
@@ -34,9 +32,7 @@ export const styles = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -77,13 +73,10 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+const stack = () => {
   return gulp.src('source/img/sprites/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+    .pipe(stacksvg({output: 'stack.svg'}))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -141,7 +134,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebp
   )
 );
@@ -156,7 +149,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebp
   ),
   gulp.series(
