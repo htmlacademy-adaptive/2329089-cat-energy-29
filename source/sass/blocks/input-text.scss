@@ -3,7 +3,6 @@
 .text-input {
   font-family: $secondary-font-family;
   font-size: 16px;
-  //line-height: 18px;
   color: $primary-text-color;
   text-transform: uppercase;
   border: 1px solid $primary-border-input;
@@ -24,7 +23,6 @@
   &::placeholder {
     font-family: $secondary-font-family;
     font-size: 16px;
-    //line-height: 18px;
     text-transform: uppercase;
     color: $primary-text-color;
     opacity: 0.7;
