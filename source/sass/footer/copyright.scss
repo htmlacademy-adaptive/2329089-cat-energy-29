@@ -35,7 +35,8 @@
     height: 34px;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:active::after {
     background-color: $primary-color;
   }
 }
