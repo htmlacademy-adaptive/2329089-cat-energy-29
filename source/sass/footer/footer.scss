@@ -8,11 +8,11 @@
   background: $secondary-bg-color;
 
   @media (min-width: $tablet) {
-    padding: 55px 0;
+    padding: 57px 0;
   }
 
   @media (min-width: $desktop) {
-    padding: 66px 0;
+    padding: 68px 0 66px;
   }
 }
 
@@ -37,7 +37,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   width: 128px;
   height: 24px;
   mask-image: url("../img/stack.svg#logo-footer");

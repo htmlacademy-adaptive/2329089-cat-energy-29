@@ -17,7 +17,7 @@
     height: 400px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -36,8 +36,9 @@
   @media (min-width: $desktop) {
     position: relative;
     width: auto;
-    gap: 0 87px;
-    padding: 60px 60px;
+    gap: 0 81px;
+    margin-top: 95px;
+    padding: 61px 78px 60px 80px;
     background: $primary-bg-color;
   }
 }
@@ -84,6 +85,10 @@
   &:not(:last-child) {
     @media (min-width: $tablet) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 18px;
     }
   }
 }

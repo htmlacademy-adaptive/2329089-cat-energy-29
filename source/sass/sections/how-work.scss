@@ -6,11 +6,12 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    padding: 0 0 47px;
+    padding-bottom: 79px;
     border-bottom: 1px solid $secondary-border-color;
   }
 
   @media (min-width: $desktop) {
+    padding-bottom: 0;
     border: 0;
   }
 }
@@ -41,13 +42,13 @@
     counter-reset: new 0;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 80px 20%;
+    gap: 108px 22%;
     padding-right: 79px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 95px;
+    gap: 80px;
     padding-right: 0;
   }
 }
@@ -71,14 +72,19 @@
     @media (min-width: $tablet) {
       position: absolute;
       z-index: -1;
-      right: 0;
-      top: -40px;
+      transform: translateX(85%);
       content: counter(new);
       font-family: $secondary-font-family;
       font-size: 280px;
       line-height: 1;
       color: $secondary-bg-color;
       text-transform: uppercase;
+    }
+  }
+
+  &:first-child::before {
+    @media (min-width: $tablet) {
+      transform: translateX(113%);
     }
   }
 }
