@@ -42,4 +42,12 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

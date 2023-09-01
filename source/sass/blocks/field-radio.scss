@@ -10,18 +10,13 @@
 }
 
 .field-radio__label {
-  position: relative;
-  padding: 6px 0 6px 46px;
-  font-family: $secondary-font-family;
-  font-size: 16px;
-  color: $grey-dark;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   user-select: none;
 
   @media (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 6px 0 6px 60px;
+    gap: 20px;
   }
 
   &:hover {
@@ -30,10 +25,7 @@
 
   &::before {
     content: "";
-    position: absolute;
     display: block;
-    top: calc(50% - 15px);
-    left: 0;
     width: 30px;
     height: 30px;
     padding: 8px;
@@ -41,7 +33,6 @@
     border-radius: 50%;
 
     @media (min-width: $tablet) {
-      top: calc(50% - 20px);
       width: 40px;
       height: 40px;
       padding: 10px;
