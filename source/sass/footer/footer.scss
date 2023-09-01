@@ -38,16 +38,22 @@
 
 .footer__logo {
   margin-bottom: 20px;
+  width: 128px;
+  height: 24px;
+  mask-image: url("../img/stack.svg#logo-footer");
+  background-color: $grey-darker;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
 
-  &:hover {
-    opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    background-color: #3e3e3e;
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: #6b6b6b;
   }
 }
