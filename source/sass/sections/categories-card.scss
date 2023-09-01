@@ -83,7 +83,6 @@
   grid-column: span 2;
   margin: 0;
   padding: 22px 0 23px;
-  line-height: 18px;
 
   @media (min-width: $tablet) {
     margin: 0 0 52px;
@@ -124,6 +123,7 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+  color: $secondary-text-color;
 
   &:active {
     opacity: 0.3;
@@ -140,10 +140,10 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  color: $secondary-text-color;
 
   @media (min-width: $tablet) {
     font-size: 20px;
+    line-height: normal;
   }
 }
 
@@ -154,8 +154,8 @@
   &::before {
     content: "";
     display: block;
-    mask-image: url("../img/sprite.svg#arrow");
-    background-color: $secondary-text-color;
+    mask-image: url("../img/stack.svg#arrow");
+    background-color: currentColor;
     width: 32px;
     height: 12px;
     transition: transform 0.5s ease;

@@ -55,7 +55,6 @@
 
 .live-example__text {
   margin: 0 0 20px;
-  line-height: 18px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
@@ -116,7 +115,6 @@
 
 .live-example__description {
   position: absolute;
-  left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
   margin: 0;
@@ -180,6 +178,7 @@
 
     @media (min-width: $desktop) {
       margin-bottom: 0;
+      margin-right: 63px;
     }
   }
 }

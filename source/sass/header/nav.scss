@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $desktop) {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   &:hover {
@@ -145,7 +145,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc($tablet - 1px)) {
   .nav--nojs .nav__toggle {
     display: none;
   }

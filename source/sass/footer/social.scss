@@ -22,34 +22,29 @@
 }
 
 .social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  background-color: $grey-dim;
+  width: 28px;
+  height: 22px;
 
   &:active {
     opacity: 0.3;
   }
 
-  &::before {
-    content: "";
-    background-color: $grey-dim;
-    width: 28px;
-    height: 22px;
+  &--vkontakte {
+    mask-image: url("../img/stack.svg#vkontakte");
   }
 
-  &--vkontakte::before {
-    mask-image: url("../img/sprite.svg#vkontakte");
+  &--youtube {
+    mask-image: url("../img/stack.svg#youtube");
   }
 
-  &--youtube::before {
-    mask-image: url("../img/sprite.svg#youtube");
+  &--telegram {
+    mask-image: url("../img/stack.svg#telegram");
   }
 
-  &--telegram::before {
-    mask-image: url("../img/sprite.svg#telegram");
-  }
-
-  &:hover::before {
+  &:hover,
+  &:active {
     background-color: $primary-color;
   }
 }

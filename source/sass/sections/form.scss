@@ -36,21 +36,24 @@
 
 .form__radio-area {
   margin: 0 -20px 26px;
-  padding: 22px 20px 20px;
+  padding: 22px 20px 19px;
   display: grid;
-  gap: 12px;
+  gap: 15px;
   border: 0;
   border-top: 1px solid $grey-lighter;
   border-bottom: 1px solid $grey-lighter;
 
   @media (min-width: $tablet) {
+    gap: 13px;
     margin: 0 0 65px;
+    padding: 23px 27px;
     border: 1px solid $grey-lighter;
   }
 
   @media (min-width: $desktop) {
     grid-column: 2;
     margin: 0 0 70px;
+    padding: 25px 28px;
   }
 }
 
@@ -148,10 +151,11 @@
 
 .form__checkbox-area {
   display: grid;
-  gap: 32px;
+  gap: 12px;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px 10px;
   }
 
   @media (min-width: $desktop) {
