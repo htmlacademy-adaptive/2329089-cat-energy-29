@@ -97,27 +97,18 @@
   }
 }
 
-.location__map-iframe {
+.location__map {
   display: block;
   width: 100%;
   height: 100%;
   border: none;
 
-  &--nojs {
+  &--hidden {
     display: none;
   }
 }
 
-.location__map-picture {
-  display: none;
-  height: 100%;
-
-  &--nojs {
-    display: block;
-  }
-}
-
-.location__map {
+.location__map-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
