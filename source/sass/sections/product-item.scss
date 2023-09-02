@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 25px;
+  padding: 21px 20px 24px;
   border-top: 1px solid $grey-very-light;
 
   @media (min-width: $tablet) {
@@ -42,18 +42,24 @@
   @media (min-width: $tablet) {
     grid-row: 1;
     height: 210px;
+    margin: 10px 0 22px;
   }
 
-  @media (min-width: $tablet) {
-    height: 210px;
+  @media (min-width: $desktop) {
+    margin: 10px 0 12px;
   }
 
   &--more {
     grid-row: 1;
     align-items: flex-end;
+    margin: 3px 0 24px;
 
     @media (min-width: $tablet) {
-      margin-top: -81px;
+      margin: -99px 0 50px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: -60px 0 0;
     }
   }
 }
@@ -96,8 +102,8 @@
 
 .product-item__title {
   text-align: left;
-  margin: 10px 0;
-  padding-right: 25px;
+  margin: 0 0 16px;
+  padding-right: 42px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -106,7 +112,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    margin: 40px 0 20px;
+    margin-bottom: 14px;
     padding: 0 50px;
     font-size: 20px;
     line-height: 24px;
@@ -114,16 +120,18 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 30px;
+    padding: 0 6px;
+    margin-bottom: 20px;
   }
 
   &--more {
+    margin-bottom: 9px;
     padding-right: 0;
     text-align: center;
 
     @media (min-width: $tablet) {
       margin-bottom: 23px;
-      padding: 0;
+      padding: 0 35px;
     }
 
     @media (min-width: $desktop) {
@@ -137,7 +145,7 @@
   align-self: start;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 10px 0;
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   color: $primary-text-color;
@@ -153,8 +161,12 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet) {
-    padding: 5px 0;
+    padding: 5px 0 6px;
     border-bottom: 1px solid $primary-border-color;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 1px;
   }
 }
 
@@ -165,19 +177,25 @@
 
 .product-item__text {
   align-self: start;
-  margin: 10px 0;
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
+    padding: 0 35px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 
 .product-item__button {
+  margin-top: 19px;
   grid-column: span 2;
   width: 100%;
   font-size: 16px;
@@ -185,7 +203,7 @@
 
   @media (min-width: $tablet) {
     grid-column: 1;
-    margin: 32px 0 0;
+    margin: 31px 0 0;
     padding: 10px 20px;
     font-size: 16px;
     line-height: 20px;
@@ -193,6 +211,20 @@
 
   &--more {
     grid-column: 1;
-    margin: 0;
+    margin-top: 20px;
+    background: $secondary-bg-color;
+    color: $primary-text-color;
+
+    &:hover {
+      background: $grey-very-light;
+    }
+
+    &:active {
+      color: rgba($primary-text-color, 0.3);
+    }
+
+    &:focus {
+      outline: 2px solid $grey-medium;
+    }
   }
 }

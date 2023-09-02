@@ -1,10 +1,11 @@
 @use "../global/variables" as *;
 
 .extra-item {
-  padding: 20px 0;
+  padding: 12px 0 19px;
   display: grid;
   justify-content: stretch;
   align-items: center;
+  border-bottom: 1px solid $primary-border-color;
   border-top: 1px solid $primary-border-color;
 
   &:last-child {
@@ -13,15 +14,15 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr auto;
-    gap: 23px;
-    padding: 26px 37px 28px;
+    gap: 24px 20px;
+    padding: 26px 37px 27px;
     border: 1px solid $primary-border-color;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 244px;
     gap: 40px;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     border: 0;
     border-top: 1px solid $primary-border-color;
 
@@ -32,7 +33,7 @@
 }
 
 .extra-item__title {
-  margin: 0 0 10px;
+  margin: 0 0 13px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -50,28 +51,36 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 10px 0;
+  margin-bottom: 15px;
   line-height: 14px;
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, auto);
-    gap: 0 29px;
+    gap: 0 54px;
+    margin-bottom: -3px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr minmax(41px, auto);
   }
 }
 
 .extra-item__value {
   justify-self: end;
   margin: 0;
+
+  @media (min-width: $desktop) {
+    justify-self: start;
+  }
 }
 
 .extra-item__button {
   @media (min-width: $tablet) {
+    padding: 10px 26px 11px;
+    font-size: 16px;
+    line-height: 20px;
     grid-column: span 2;
   }
 

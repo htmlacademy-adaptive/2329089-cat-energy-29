@@ -20,10 +20,16 @@
 }
 
 .product-catalog__title {
+  margin: 28px 0 39px;
   padding: 0 20px;
 
   @media (min-width: $tablet) {
+    margin: 65px 0 84px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 73px;
   }
 }
 
@@ -36,7 +42,7 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px 6%;
+    gap: 60px 8.5%;
   }
 
   @media (min-width: $desktop) {

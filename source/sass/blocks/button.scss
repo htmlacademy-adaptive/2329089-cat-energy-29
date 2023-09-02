@@ -32,23 +32,6 @@
     outline: 2px solid $focus-button-color;
   }
 
-  &--secondary {
-    background: $secondary-bg-color;
-    color: $primary-text-color;
-
-    &:hover {
-      background: $grey-very-light;
-    }
-
-    &:active {
-      color: rgba($primary-text-color, 0.3);
-    }
-
-    &:focus {
-      outline: 2px solid $grey-medium;
-    }
-  }
-
   &--card {
     font-size: 16px;
     line-height: 20px;
