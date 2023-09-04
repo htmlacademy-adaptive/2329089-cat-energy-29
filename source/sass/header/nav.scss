@@ -26,6 +26,12 @@
   @media (min-width: $desktop) {
     margin: 0;
   }
+
+  &--default {
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+  }
 }
 
 .nav__item {

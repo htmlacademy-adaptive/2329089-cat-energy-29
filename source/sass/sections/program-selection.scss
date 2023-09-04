@@ -21,19 +21,21 @@
 
 .program-selection__description {
   margin: 0 0 39px;
+  padding-right: 10px;
   font-family: $secondary-font-family;
   font-size: 14px;
   text-transform: uppercase;
   color: $secondary-text-color;
 
   @media (min-width: $tablet) {
-    margin: 0 0 66px;
+    margin-bottom: 66px;
     width: 330px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 63px;
     grid-column: span 2;
   }
 }
