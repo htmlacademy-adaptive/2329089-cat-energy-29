@@ -38,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
 
   @media (min-width: $tablet) {
     grid-row: 1;
@@ -65,10 +66,9 @@
 }
 
 .product-item__image {
-  @media (min-width: $tablet) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .product-item__icon {

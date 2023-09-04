@@ -89,7 +89,6 @@
   }
 }
 
-
 .slider__arrow-left,
 .slider__arrow-right {
   width: 0;
@@ -105,8 +104,6 @@
 .slider__arrow-right {
   border-left: 9px solid $grey-dim;
 }
-
-
 
 .slider__control-circle:hover + .slider__control-line {
   border-color: $primary-color;

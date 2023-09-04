@@ -47,13 +47,12 @@
     margin-bottom: 0;
   }
 
-
   &:hover,
   &:focus {
-    background-color: #3e3e3e;
+    background-color: $logo-color-hover;
   }
 
   &:active {
-    background-color: #6b6b6b;
+    background-color: $logo-color-active;
   }
 }
