@@ -17,7 +17,8 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     align-items: center;
     gap: 34px;
   }
