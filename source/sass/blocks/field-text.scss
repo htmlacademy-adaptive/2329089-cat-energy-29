@@ -24,6 +24,14 @@
     border: 1px solid $primary-border-color;
     padding-right: 40px;
   }
+
+  &:focus + .field-text__icon {
+    background-color: $primary-color;
+  }
+
+  &:invalid + .field-text__icon {
+    background-color: $status-error;
+  }
 }
 
 .field-text__icon {
@@ -46,12 +54,4 @@
   &--phone {
     mask-image: url("../img/stack.svg#phone");
   }
-}
-
-.field-text__input:focus ~ .field-text__icon {
-  background-color: $primary-color;
-}
-
-.field-text__input:invalid ~ .field-text__icon {
-  background-color: $status-error;
 }

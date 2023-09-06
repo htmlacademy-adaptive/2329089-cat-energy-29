@@ -7,6 +7,27 @@
 
 .field-radio__input {
   @include visually-hidden();
+
+  &:checked ~ .field-radio__label::before {
+    background-color: $primary-color;
+    background-clip: content-box;
+  }
+
+  &:focus ~ .field-radio__label::before {
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:not(:disabled) ~ .field-radio__label:hover::before {
+    border-color: $grey-medium;
+  }
+
+  &:disabled ~ .field-radio__label {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .field-radio__label:hover {
+    cursor: default;
+  }
 }
 
 .field-radio__label {
@@ -38,25 +59,4 @@
       padding: 10px;
     }
   }
-}
-
-.field-radio__input:checked ~ .field-radio__label::before {
-  background-color: $primary-color;
-  background-clip: content-box;
-}
-
-.field-radio__input:focus ~ .field-radio__label::before {
-  outline: 1px solid $primary-text-color;
-}
-
-.field-radio__input:not(:disabled) ~ .field-radio__label:hover::before {
-  border-color: $grey-medium;
-}
-
-.field-radio__input:disabled ~ .field-radio__label {
-  opacity: 0.3;
-}
-
-.field-radio__input:disabled ~ .field-radio__label:hover {
-  cursor: default;
 }

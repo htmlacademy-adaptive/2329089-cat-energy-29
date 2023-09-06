@@ -7,6 +7,28 @@
 
 .field-checkbox__input {
   @include visually-hidden();
+
+  &:checked ~ .field-checkbox__label::before {
+    background: url("../img/icons/tick.svg") no-repeat center;
+    background-size: 21px auto;
+    background-clip: content-box;
+  }
+
+  &:focus ~ .field-checkbox__label::before {
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:not(:disabled) ~ .field-checkbox__label:hover::before {
+    border-color: $grey-medium;
+  }
+
+  &:disabled ~ .field-checkbox__label {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .field-checkbox__label:hover {
+    cursor: default;
+  }
 }
 
 .field-checkbox__label {
@@ -35,26 +57,4 @@
       height: 40px;
     }
   }
-}
-
-.field-checkbox__input:checked ~ .field-checkbox__label::before {
-  background: url("../img/icons/tick.svg") no-repeat center;
-  background-size: 21px auto;
-  background-clip: content-box;
-}
-
-.field-checkbox__input:focus ~ .field-checkbox__label::before {
-  outline: 1px solid $primary-text-color;
-}
-
-.field-checkbox__input:not(:disabled) ~ .field-checkbox__label:hover::before {
-  border-color: $grey-medium;
-}
-
-.field-checkbox__input:disabled ~ .field-checkbox__label {
-  opacity: 0.3;
-}
-
-.field-checkbox__input:disabled ~ .field-checkbox__label:hover {
-  cursor: default;
 }
