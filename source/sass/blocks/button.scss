@@ -31,15 +31,4 @@
   &:focus {
     outline: 2px solid $focus-button-color;
   }
-
-  &--card {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet) {
-      padding: 10px 20px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
 }

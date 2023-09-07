@@ -6,7 +6,6 @@
   align-items: center;
   padding: 25px 0 40px;
   background-color: $special-bg-color;
-  background-size: 100vw;
 
   @media (min-width: $tablet) {
     padding: 45px 0 101px;
@@ -42,14 +41,14 @@
 
   @media (min-width: 768px) {
     grid-column: span 2;
-    margin: 0 0 60px;
+    margin-bottom: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1;
     grid-row: 1;
-    margin: 0 0 146px;
+    margin-bottom: 146px;
   }
 }
 
@@ -58,13 +57,13 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
-    line-height: 24px;
-    margin: 0 0 55px;
+    margin-bottom: 55px;
     grid-column: span 2;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 69px;
+    margin-bottom: 69px;
     grid-column: 1;
     grid-row: 2;
   }
@@ -82,11 +81,11 @@
     justify-self: start;
     grid-template-columns: repeat(2, 162px);
     gap: 43px;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 64px;
+    margin-bottom: 64px;
     grid-column: 1;
     grid-row: 3;
   }
@@ -186,10 +185,6 @@
 
 .live-example__slider {
   margin-top: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 
   @media (min-width: $tablet) {
     margin-top: 106px;

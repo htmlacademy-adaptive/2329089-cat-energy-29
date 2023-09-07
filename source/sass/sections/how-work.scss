@@ -21,12 +21,8 @@
   line-height: 40px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 72px;
+    margin-bottom: 72px;
     line-height: 1;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 0 0 72px;
   }
 }
 
@@ -107,36 +103,28 @@
     background-color: $secondary-color;
   }
 
-  &--leaf {
-    &::before {
-      mask-image: url("../img/stack.svg#leaf");
-      width: 30px;
-      height: 32px;
-    }
+  &--leaf::before {
+    mask-image: url("../img/stack.svg#leaf");
+    width: 30px;
+    height: 32px;
   }
 
-  &--dust {
-    &::before {
-      mask-image: url("../img/stack.svg#dust");
-      width: 26px;
-      height: 29px;
-    }
+  &--dust::before {
+    mask-image: url("../img/stack.svg#dust");
+    width: 26px;
+    height: 29px;
   }
 
-  &--eat {
-    &::before {
-      mask-image: url("../img/stack.svg#eat");
-      width: 25px;
-      height: 30px;
-    }
+  &--eat::before {
+    mask-image: url("../img/stack.svg#eat");
+    width: 25px;
+    height: 30px;
   }
 
-  &--clock {
-    &::before {
-      mask-image: url("../img/stack.svg#clock");
-      width: 26px;
-      height: 31px;
-    }
+  &--clock::before {
+    mask-image: url("../img/stack.svg#clock");
+    width: 26px;
+    height: 31px;
   }
 }
 

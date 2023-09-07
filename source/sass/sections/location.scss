@@ -5,10 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.location--secondary {
-  background: $secondary-bg-color;
+  &--secondary {
+    background: $secondary-bg-color;
+  }
 }
 
 .location__wrapper {

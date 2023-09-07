@@ -19,7 +19,6 @@
   background-size: cover;
   color: $secondary-color;
 
-
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, auto);
     gap: 264px;
