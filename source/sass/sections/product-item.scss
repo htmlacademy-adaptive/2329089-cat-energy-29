@@ -53,9 +53,11 @@
     grid-row: 1;
     align-items: flex-end;
     margin: 3px 0 24px;
+    height: auto;
 
     @media (min-width: $tablet) {
       margin: -99px 0 50px;
+      height: 210px;
     }
 
     @media (min-width: $desktop) {
