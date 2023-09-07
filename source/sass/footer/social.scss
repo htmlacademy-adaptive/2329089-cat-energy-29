@@ -21,6 +21,12 @@
   list-style: none;
 }
 
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social__link {
   display: block;
   background-color: $grey-dim;

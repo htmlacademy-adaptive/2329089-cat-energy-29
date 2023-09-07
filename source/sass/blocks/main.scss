@@ -1,5 +1,9 @@
 @use "../global/variables" as *;
 
+.main {
+  display: grid;
+}
+
 .main__intro {
   position: relative;
   margin-bottom: 20px;

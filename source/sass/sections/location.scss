@@ -11,7 +11,7 @@
   }
 }
 
-.location__wrapper {
+.location__container {
   @media (min-width: $desktop) {
     position: absolute;
     height: 400px;
@@ -59,7 +59,7 @@
   }
 }
 
-.location__text-container {
+.location__text-wrapper {
   margin: 0;
   line-height: 20px;
   color: $primary-text-color;
@@ -108,7 +108,7 @@
   height: 100%;
   border: none;
 
-  &--hidden {
+  &--nojs {
     display: none;
   }
 }
