@@ -28,7 +28,7 @@
   }
 }
 
-.header__list {
+.header__logo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.header__logo {
+.header__logo-link {
   display: block;
 
   &[href]:hover {
@@ -70,25 +70,15 @@
   }
 }
 
-.header__logo-item {
-  &--secondary {
-    justify-self: center;
+.header__logo-inner {
+  justify-self: center;
+
+  &--left {
+    justify-self: start;
   }
 }
 
 .header__logo-text {
-  display: block;
-
-  &[href]:hover {
-    opacity: 0.8;
-  }
-
-  &[href]:active {
-    opacity: 0.6;
-  }
-}
-
-.header__logo-text-image {
   display: block;
 
   @media (min-width: $desktop) {
@@ -99,9 +89,6 @@
 
 .header__nav {
   grid-column: span 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 -20px;
 
   @media (min-width: $tablet) {

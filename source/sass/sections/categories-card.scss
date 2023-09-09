@@ -116,7 +116,7 @@
   }
 }
 
-.categories-card__link-wrapper {
+.categories-card__bottom {
   border-top: 1px solid $grey-lighter;
   padding: 19px 0 0;
   grid-column: span 2;
@@ -140,7 +140,6 @@
   gap: 17px;
   justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
   color: $secondary-text-color;
 
   @media (min-width: $tablet) {

@@ -37,11 +37,11 @@
 }
 
 .footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 19px;
-  width: 128px;
-  height: 24px;
-  mask-image: url("../img/stack.svg#logo-footer");
-  background-color: $grey-darker;
+  fill: $grey-darker;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -49,10 +49,10 @@
 
   &:hover,
   &:focus {
-    background-color: $logo-color-hover;
+    fill: $text-color-hover;
   }
 
   &:active {
-    background-color: $logo-color-active;
+    fill: $text-color-active;
   }
 }

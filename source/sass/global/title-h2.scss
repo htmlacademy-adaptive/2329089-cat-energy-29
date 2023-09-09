@@ -18,12 +18,4 @@
   @media (min-width: $desktop) {
     max-width: 1220px;
   }
-
-  &--low {
-    line-height: 24px;
-
-    @media (min-width: $tablet) {
-      line-height: 36px;
-    }
-  }
 }

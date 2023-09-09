@@ -87,7 +87,26 @@
 
   &:active {
     border-color: $hover-button-color;
+    opacity: 0.6;
   }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+  }
+
+  &::before {
+    border-right: 9px solid $grey-dim;
+  }
+
+  &::after {
+    border-left: 9px solid $grey-dim;
+  }
+
 
   &:hover + .slider__control-line {
     border-color: $primary-color;
@@ -95,37 +114,22 @@
 
   &:active + .slider__control-line {
     border-color: $hover-button-color;
+    opacity: 0.6;
   }
 
-  &:hover > .slider__arrow-left {
+  &:hover::before {
     border-right-color: $primary-color;
   }
 
-  &:hover > .slider__arrow-right {
+  &:hover::after {
     border-left-color: $primary-color;
   }
 
-  &:active > .slider__arrow-left {
+  &:active::before {
     border-right-color: $hover-button-color;
   }
 
-  &:active > .slider__arrow-right {
+  &:active::after {
     border-left-color: $hover-button-color;
   }
-}
-
-.slider__arrow-left,
-.slider__arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-}
-
-.slider__arrow-left {
-  border-right: 9px solid $grey-dim;
-}
-
-.slider__arrow-right {
-  border-left: 9px solid $grey-dim;
 }
