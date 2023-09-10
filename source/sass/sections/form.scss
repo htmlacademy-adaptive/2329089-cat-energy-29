@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixins" as *;
 
 .form {
   display: grid;
@@ -66,6 +67,225 @@
   @media (min-width: $desktop) {
     grid-column: 1;
     margin-bottom: 0;
+  }
+}
+
+.form__label-text {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.form__field-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 13px;
+}
+
+.form__input-text-content {
+  position: relative;
+}
+
+.form__input-text {
+  width: 100%;
+  padding: 10px 15px 9px;
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  border: 1px solid $primary-border-input;
+
+  @media (min-width: $tablet) {
+    min-width: 250px;
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: $primary-border-color;
+  }
+
+  &:focus {
+    border-color: $primary-text-color;
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:invalid {
+    border-color: $status-error;
+    outline: 1px solid $status-error;
+  }
+
+  &::placeholder {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    opacity: 0.7;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &--with-icon {
+    border: 1px solid $primary-border-color;
+    padding-right: 40px;
+  }
+
+  &:focus + .form__input-icon {
+    background-color: $primary-color;
+  }
+
+  &:invalid + .form__input-icon {
+    background-color: $status-error;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: $secondary-text-color;
+
+  @media (min-width: $tablet) {
+    right: 14px;
+  }
+
+  &--email {
+    mask-image: url("../img/stack.svg#email");
+  }
+
+  &--phone {
+    mask-image: url("../img/stack.svg#phone");
+  }
+}
+
+.form__field-radio {
+  display: flex;
+}
+
+.form__input-radio {
+  @include visually-hidden();
+
+  &:checked ~ .form__label-radio::before {
+    background-color: $primary-color;
+    background-clip: content-box;
+  }
+
+  &:focus ~ .form__label-radio::before {
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:not(:disabled) ~ .form__label-radio:hover::before {
+    border-color: $grey-medium;
+  }
+
+  &:disabled ~ .form__label-radio {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .form__label-radio:hover {
+    cursor: default;
+  }
+}
+
+.form__label-radio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  user-select: none;
+
+  @media (min-width: $tablet) {
+    gap: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid $primary-border-color;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+  }
+}
+
+.form__field-checkbox {
+  display: flex;
+}
+
+.form__input-checkbox {
+  @include visually-hidden();
+
+  &:checked ~ .form__label-checkbox::before {
+    background: url("../img/icons/tick.svg") no-repeat center;
+    background-size: 21px auto;
+    background-clip: content-box;
+  }
+
+  &:focus ~ .form__label-checkbox::before {
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:not(:disabled) ~ .form__label-checkbox:hover::before {
+    border-color: $grey-medium;
+  }
+
+  &:disabled ~ .form__label-checkbox {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .form__label-checkbox:hover {
+    cursor: default;
+  }
+}
+
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  user-select: none;
+
+  @media (min-width: $tablet) {
+    gap: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $primary-border-color;
+
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -226,7 +446,7 @@
   width: 100%;
 }
 
-.form__obligatory {
+.form__required {
   text-align: center;
   align-self: center;
   line-height: 16px;
