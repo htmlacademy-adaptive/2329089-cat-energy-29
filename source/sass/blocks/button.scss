@@ -1,11 +1,11 @@
 @use "../global/variables" as *;
 
 .button {
-  padding: 9px 20px;
+  padding: 10px 20px;
   font-family: $secondary-font-family;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
-  text-decoration: none;
   color: $secondary-color;
   text-transform: uppercase;
   background: $primary-color;
@@ -15,7 +15,7 @@
   @media (min-width: $tablet) {
     padding: 14px 26px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
   }
 
   &:hover {
@@ -29,33 +29,5 @@
 
   &:focus {
     outline: 2px solid $focus-button-color;
-  }
-
-  &--secondary {
-    background: $secondary-bg-color;
-    color: $primary-text-color;
-
-    &:hover {
-      background: $grey-very-light;
-    }
-
-    &:active {
-      color: rgba($primary-text-color, 0.3);
-    }
-
-    &:focus {
-      outline: 2px solid $grey-medium;
-    }
-  }
-
-  &--card {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet) {
-      padding: 10px 20px;
-      font-size: 16px;
-      line-height: 20px;
-    }
   }
 }

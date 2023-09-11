@@ -8,11 +8,11 @@
   background: $secondary-bg-color;
 
   @media (min-width: $tablet) {
-    padding: 55px 0;
+    padding: 57px 0;
   }
 
   @media (min-width: $desktop) {
-    padding: 66px 0;
+    padding: 68px 0 66px;
   }
 }
 
@@ -37,23 +37,22 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
-  width: 128px;
-  height: 24px;
-  mask-image: url("../img/stack.svg#logo-footer");
-  background-color: $grey-darker;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 19px;
+  fill: $grey-darker;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
 
-
   &:hover,
   &:focus {
-    background-color: #3e3e3e;
+    fill: $text-color-hover;
   }
 
   &:active {
-    background-color: #6b6b6b;
+    fill: $text-color-active;
   }
 }

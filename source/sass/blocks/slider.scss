@@ -4,6 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  justify-content: center;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 280px);
@@ -73,8 +74,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border: 2px solid $grey-dim;
   border-radius: 50%;
   background: $secondary-color;
@@ -86,46 +87,49 @@
 
   &:active {
     border-color: $hover-button-color;
+    opacity: 0.6;
   }
-}
+
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+  }
+
+  &::before {
+    border-right: 9px solid $grey-dim;
+  }
+
+  &::after {
+    border-left: 9px solid $grey-dim;
+  }
 
 
-.slider__arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 10px solid $grey-dim;
-  border-bottom: 10px solid transparent;
-}
+  &:hover + .slider__control-line {
+    border-color: $primary-color;
+  }
 
-.slider__arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-left: 10px solid $grey-dim;
-  border-bottom: 10px solid transparent;
-}
+  &:active + .slider__control-line {
+    border-color: $hover-button-color;
+    opacity: 0.6;
+  }
 
-.slider__control-circle:hover + .slider__control-line {
-  border-color: $primary-color;
-}
+  &:hover::before {
+    border-right-color: $primary-color;
+  }
 
-.slider__control-circle:active + .slider__control-line {
-  border-color: $hover-button-color;
-}
+  &:hover::after {
+    border-left-color: $primary-color;
+  }
 
-.slider__control-circle:hover > .slider__arrow-left {
-  border-right-color: $primary-color;
-}
+  &:active::before {
+    border-right-color: $hover-button-color;
+  }
 
-.slider__control-circle:hover > .slider__arrow-right {
-  border-left-color: $primary-color;
-}
-
-.slider__control-circle:active > .slider__arrow-left {
-  border-right-color: $hover-button-color;
-}
-
-.slider__control-circle:active > .slider__arrow-right {
-  border-left-color: $hover-button-color;
+  &:active::after {
+    border-left-color: $hover-button-color;
+  }
 }

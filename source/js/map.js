@@ -1,5 +1,3 @@
-let mapPicture = document.querySelector('.location__map-picture');
-let mapIframe = document.querySelector('.location__map-iframe');
+let mapIframe = document.querySelector('.location__map--nojs');
 
-mapPicture.classList.remove('location__map-picture--nojs');
-mapIframe.classList.remove('location__map-iframe--nojs');
+mapIframe.classList.remove('location__map--nojs');

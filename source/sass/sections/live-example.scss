@@ -6,7 +6,6 @@
   align-items: center;
   padding: 25px 0 40px;
   background-color: $special-bg-color;
-  background-size: 100vw;
 
   @media (min-width: $tablet) {
     padding: 45px 0 101px;
@@ -17,7 +16,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 0 75px;
+    padding: 0 0 69px;
     background-image: linear-gradient(to bottom, transparent 136px, rgba($special-bg-color, 0.85) 136px);
   }
 }
@@ -32,7 +31,7 @@
   }
 
   @media (min-width: $desktop) {
-    gap: 0 224px;
+    gap: 0 227px;
   }
 }
 
@@ -42,14 +41,14 @@
 
   @media (min-width: 768px) {
     grid-column: span 2;
-    margin: 0 0 60px;
+    margin-bottom: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1;
     grid-row: 1;
-    margin: 0 0 146px;
+    margin-bottom: 146px;
   }
 }
 
@@ -58,13 +57,13 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet) {
-    line-height: 24px;
-    margin: 0 0 55px;
+    margin-bottom: 55px;
     grid-column: span 2;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 69px;
+    margin-bottom: 69px;
     grid-column: 1;
     grid-row: 2;
   }
@@ -81,11 +80,12 @@
   @media (min-width: $tablet) {
     justify-self: start;
     grid-template-columns: repeat(2, 162px);
-    margin: 0;
+    gap: 43px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 60px;
+    margin-bottom: 64px;
     grid-column: 1;
     grid-row: 3;
   }
@@ -103,7 +103,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-text-color;
-  padding: 14px 0 17px;
+  padding: 14px 0 16px;
   border: 1px solid $primary-border-color;
   border-radius: 3px;
 
@@ -115,7 +115,7 @@
 
 .live-example__description {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -41%);
   display: inline-block;
   margin: 0;
   padding: 0 15px;
@@ -185,18 +185,14 @@
 
 .live-example__slider {
   margin-top: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 
   @media (min-width: $tablet) {
-    margin-top: 99px;
+    margin-top: 106px;
     grid-column: span 2;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 0;
+    margin-top: -13px;
     grid-column: 2;
     grid-row: span 4;
   }

@@ -2,6 +2,9 @@
 
 .nav {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__wrapper {
@@ -17,9 +20,10 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     align-items: center;
-    gap: 33px;
+    gap: 34px;
   }
 }
 
@@ -42,12 +46,11 @@
 .nav__link {
   display: block;
   width: 100%;
-  padding: 22px 0 24px;
+  padding: 22px 0 23px;
   text-align: center;
   font-family: $secondary-font-family;
   font-size: 20px;
   line-height: 20px;
-  text-decoration: none;
   text-transform: uppercase;
   color: $primary-text-color;
 
@@ -70,9 +73,14 @@
 
   &--current {
     @media (min-width: $tablet) {
-      padding: 0 0 5px;
-      margin: 0 0 -5px;
+      padding: 0 0 10px;
+      margin: 0 0 -12px;
       border-bottom: 2px solid $primary-color;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0 0 12px;
+      margin: 0 0 -14px;
     }
   }
 
