@@ -192,7 +192,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: -13px;
+    align-self: start;
+    margin-top: 0;
     grid-column: 2;
     grid-row: span 4;
   }
