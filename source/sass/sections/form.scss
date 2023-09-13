@@ -147,6 +147,14 @@
   &:invalid + .form__input-icon {
     background-color: $status-error;
   }
+
+  &--digit {
+    appearance: textfield;
+
+    &:hover {
+      appearance: auto;
+    }
+  }
 }
 
 .form__input-icon {
