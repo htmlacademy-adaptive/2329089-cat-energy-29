@@ -15,6 +15,13 @@
   &--index {
     border: none;
   }
+
+  &--index > .header__container {
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+  }
 }
 
 .header__container {
@@ -36,11 +43,16 @@
   padding: 13px 0 14px;
 
   @media (min-width: $tablet) {
+    align-self: start;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 13px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    justify-self: start;
   }
 }
 
