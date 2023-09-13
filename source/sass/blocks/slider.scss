@@ -78,6 +78,7 @@
   height: 40px;
   border: 2px solid $grey-dim;
   border-radius: 50%;
+  outline: none;
   background: $secondary-color;
 
   &:hover {
@@ -88,6 +89,10 @@
   &:active {
     border-color: $hover-button-color;
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid $primary-text-color;
   }
 
   &::before,
